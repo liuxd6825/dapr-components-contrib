@@ -21,7 +21,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 func TestNewInMemoryBus(t *testing.T) {

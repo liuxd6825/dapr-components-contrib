@@ -29,9 +29,9 @@ import (
 
 	internals "github.com/dapr/kit/crypto"
 	"github.com/dapr/kit/logger"
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	kubeclient "github.com/liuxd6825/components-contrib/internal/authentication/kubernetes"
-	"github.com/liuxd6825/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	kubeclient "github.com/liuxd6825/dapr-components-contrib/internal/authentication/kubernetes"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

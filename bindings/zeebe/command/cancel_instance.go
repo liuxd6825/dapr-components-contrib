@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
 )
 
 var ErrMissingProcessInstanceKey = errors.New("processInstanceKey is a required attribute")

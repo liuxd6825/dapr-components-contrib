@@ -2,9 +2,9 @@ package repository_impl
 
 import (
 	"github.com/google/uuid"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/model"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/model"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
 	"golang.org/x/net/context"
 	"testing"
 )

@@ -28,7 +28,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 type mockedDynamoDB struct {

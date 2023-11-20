@@ -25,8 +25,8 @@ import (
 
 	"github.com/dapr/kit/jwkscache"
 	"github.com/dapr/kit/logger"
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type jwksCrypto struct {

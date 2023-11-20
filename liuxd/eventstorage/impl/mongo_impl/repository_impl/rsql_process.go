@@ -2,8 +2,8 @@ package repository_impl
 
 import (
 	"fmt"
-	"github.com/liuxd6825/components-contrib/liuxd/common/rsql"
-	"github.com/liuxd6825/components-contrib/liuxd/common/utils"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/rsql"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/utils"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

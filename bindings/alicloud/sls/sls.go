@@ -11,8 +11,8 @@ import (
 	"github.com/aliyun/aliyun-log-go-sdk/producer"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type AliCloudSlsLogstorage struct {

@@ -31,8 +31,8 @@ import (
 	"github.com/go-sql-driver/mysql"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

@@ -21,9 +21,9 @@ import (
 	"time"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/eventbus"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/internal/eventbus"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 type bus struct {

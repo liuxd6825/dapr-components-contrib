@@ -18,8 +18,8 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/liuxd6825/components-contrib/secretstores"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 	"github.com/liuxd6825/go-sdk/client"
 	"github.com/stretchr/testify/assert"
 )

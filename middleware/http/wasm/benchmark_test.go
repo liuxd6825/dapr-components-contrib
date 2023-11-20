@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/httputils"
-	"github.com/liuxd6825/components-contrib/metadata"
-	dapr "github.com/liuxd6825/components-contrib/middleware"
+	"github.com/liuxd6825/dapr-components-contrib/internal/httputils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	dapr "github.com/liuxd6825/dapr-components-contrib/middleware"
 )
 
 const parallel = 10

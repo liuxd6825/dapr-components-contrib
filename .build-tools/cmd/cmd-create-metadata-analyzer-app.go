@@ -16,7 +16,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/liuxd6825/components-contrib/build-tools/pkg/metadataanalyzer"
+	"github.com/liuxd6825/dapr-components-contrib/build-tools/pkg/metadataanalyzer"
 )
 
 // generateMetadataAnalyzerAppCmd generates the go program file to analyze component metadata

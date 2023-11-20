@@ -22,10 +22,10 @@ import (
 	"github.com/liuxd6825/dapr/pkg/runtime"
 	"github.com/liuxd6825/dapr/pkg/runtime/registry"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 
-	rtembedded "github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	rtembedded "github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
 	// Go SDK
 	dapr "github.com/liuxd6825/go-sdk/client"
 )

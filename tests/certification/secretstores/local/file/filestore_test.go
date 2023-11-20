@@ -22,14 +22,14 @@ import (
 
 	// SecretStores
 
-	secretstore_file "github.com/liuxd6825/components-contrib/secretstores/local/file"
+	"github.com/dapr/kit/logger"
+	secretstore_file "github.com/liuxd6825/dapr-components-contrib/secretstores/local/file"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
-	"github.com/dapr/kit/logger"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	"github.com/liuxd6825/go-sdk/client"
 )
 

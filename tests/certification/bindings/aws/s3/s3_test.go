@@ -24,8 +24,8 @@ import (
 
 	"testing"
 
-	bindings_s3 "github.com/liuxd6825/components-contrib/bindings/aws/s3"
-	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
+	bindings_s3 "github.com/liuxd6825/dapr-components-contrib/bindings/aws/s3"
+	secretstore_env "github.com/liuxd6825/dapr-components-contrib/secretstores/local/env"
 	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 
@@ -33,9 +33,9 @@ import (
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	daprsdk "github.com/liuxd6825/go-sdk/client"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 
 	"github.com/aws/aws-sdk-go/service/s3"
 )

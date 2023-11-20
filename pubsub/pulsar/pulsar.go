@@ -31,9 +31,9 @@ import (
 	lru "github.com/hashicorp/golang-lru/v2"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/authentication/oauth2"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/internal/authentication/oauth2"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 const (

@@ -2,7 +2,7 @@ package model
 
 import (
 	"errors"
-	"github.com/liuxd6825/components-contrib/liuxd/common/utils"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/utils"
 )
 
 const (

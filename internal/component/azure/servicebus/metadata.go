@@ -22,7 +22,7 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // Metadata options for Service Bus components.

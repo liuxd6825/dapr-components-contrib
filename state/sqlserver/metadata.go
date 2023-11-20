@@ -26,8 +26,8 @@ import (
 	"github.com/microsoft/go-mssqldb/msdsn"
 
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

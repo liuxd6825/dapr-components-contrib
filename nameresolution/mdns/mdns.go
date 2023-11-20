@@ -28,7 +28,7 @@ import (
 	"github.com/grandcat/zeroconf"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/nameresolution"
+	"github.com/liuxd6825/dapr-components-contrib/nameresolution"
 )
 
 const (
@@ -323,7 +323,7 @@ func (m *Resolver) getZeroconfResolver() (resolver *zeroconf.Resolver, err error
 }
 
 // Close is not formally part of the name resolution interface as proposed
-// in https://github.com/liuxd6825/components-contrib/issues/1472 but this is
+// in https://github.com/liuxd6825/dapr-components-contrib/issues/1472 but this is
 // used in the tests to clean up the mDNS registration.
 func (m *Resolver) Close() error {
 	// stop all app ids currently being served from this resolver.

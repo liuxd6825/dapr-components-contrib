@@ -29,9 +29,9 @@ import (
 	"github.com/camunda/zeebe/clients/go/v8/pkg/zbc"
 	"github.com/google/uuid"
 	"github.com/joho/godotenv"
-	"github.com/liuxd6825/components-contrib/bindings"
-	bindings_zeebe_command "github.com/liuxd6825/components-contrib/bindings/zeebe/command"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	bindings_zeebe_command "github.com/liuxd6825/dapr-components-contrib/bindings/zeebe/command"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 	dapr_client "github.com/liuxd6825/go-sdk/client"
 )
 

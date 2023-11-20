@@ -15,10 +15,10 @@ package command_test
 
 import (
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	bindings_zeebe_command "github.com/liuxd6825/components-contrib/bindings/zeebe/command"
-	bindings_zeebe_jobworker "github.com/liuxd6825/components-contrib/bindings/zeebe/jobworker"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	bindings_zeebe_command "github.com/liuxd6825/dapr-components-contrib/bindings/zeebe/command"
+	bindings_zeebe_jobworker "github.com/liuxd6825/dapr-components-contrib/bindings/zeebe/jobworker"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
 	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
 )
 

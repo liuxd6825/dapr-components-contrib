@@ -25,9 +25,9 @@ import (
 	jsoniter "github.com/json-iterator/go"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	stateutils "github.com/liuxd6825/components-contrib/state/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	stateutils "github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 const (

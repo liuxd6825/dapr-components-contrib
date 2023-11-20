@@ -29,7 +29,7 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
-	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
 )
 
 type RocketMQ struct {
@@ -137,7 +137,7 @@ func (a *RocketMQ) Read(ctx context.Context, handler bindings.Handler) error {
 	return nil
 }
 
-// Close implements cancel all listeners, see https://github.com/liuxd6825/components-contrib/issues/779
+// Close implements cancel all listeners, see https://github.com/liuxd6825/dapr-components-contrib/issues/779
 func (a *RocketMQ) Close() error {
 	defer a.wg.Wait()
 	if a.closed.CompareAndSwap(false, true) {

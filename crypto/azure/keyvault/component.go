@@ -28,8 +28,8 @@ import (
 
 	internals "github.com/dapr/kit/crypto"
 	"github.com/dapr/kit/logger"
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 var errKeyNotFound = errors.New("key not found in the vault")

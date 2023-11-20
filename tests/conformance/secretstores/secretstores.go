@@ -19,9 +19,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/secretstores"
-	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores"
+	"github.com/liuxd6825/dapr-components-contrib/tests/conformance/utils"
 )
 
 // creating this struct so that it can be expanded later.

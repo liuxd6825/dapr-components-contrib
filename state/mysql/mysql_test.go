@@ -29,9 +29,9 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	"github.com/liuxd6825/components-contrib/state/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 const (

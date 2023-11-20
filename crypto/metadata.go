@@ -14,7 +14,7 @@ limitations under the License.
 package crypto
 
 import (
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // Metadata contains a crypto specific set of metadata properties.

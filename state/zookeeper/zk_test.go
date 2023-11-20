@@ -24,7 +24,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 //go:generate mockgen -package zookeeper -source zk.go -destination zk_mock.go

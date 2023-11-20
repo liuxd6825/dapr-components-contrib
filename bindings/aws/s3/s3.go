@@ -34,10 +34,10 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/bindings"
-	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
-	"github.com/liuxd6825/components-contrib/internal/utils"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	awsAuth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/aws"
+	"github.com/liuxd6825/dapr-components-contrib/internal/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

@@ -23,7 +23,7 @@ import (
 	"github.com/liuxd6825/go-sdk/service/common"
 	daprd "github.com/liuxd6825/go-sdk/service/http"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 )
 
 type App struct {

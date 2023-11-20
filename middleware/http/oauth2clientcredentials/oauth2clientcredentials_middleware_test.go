@@ -26,8 +26,8 @@ import (
 	oauth2 "golang.org/x/oauth2"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/middleware"
-	mock "github.com/liuxd6825/components-contrib/middleware/http/oauth2clientcredentials/mocks"
+	"github.com/liuxd6825/dapr-components-contrib/middleware"
+	mock "github.com/liuxd6825/dapr-components-contrib/middleware/http/oauth2clientcredentials/mocks"
 )
 
 // mockedRequestHandler acts like an upstream service returns success status code 200 and a fixed response body.

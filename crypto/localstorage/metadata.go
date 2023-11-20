@@ -19,8 +19,8 @@ import (
 	"os"
 	"path/filepath"
 
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	"github.com/liuxd6825/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type localStorageMetadata struct {

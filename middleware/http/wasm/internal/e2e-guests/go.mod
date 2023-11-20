@@ -1,4 +1,4 @@
-module github.com/liuxd6825/components-contrib/middleware/wasm/internal
+module github.com/liuxd6825/dapr-components-contrib/middleware/wasm/internal
 
 go 1.20
 

@@ -31,7 +31,7 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	cfworkerscode "github.com/liuxd6825/components-contrib/internal/component/cloudflare/workers/code"
+	cfworkerscode "github.com/liuxd6825/dapr-components-contrib/internal/component/cloudflare/workers/code"
 )
 
 const (

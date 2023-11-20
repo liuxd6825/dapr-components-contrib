@@ -24,8 +24,8 @@ import (
 	"github.com/influxdata/influxdb-client-go/api"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const queryOperation bindings.OperationKind = "query"

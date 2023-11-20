@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	kitex_tests "github.com/liuxd6825/components-contrib/tests/e2e/bindings/kitex"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	kitex_tests "github.com/liuxd6825/dapr-components-contrib/tests/e2e/bindings/kitex"
 )
 
 const (

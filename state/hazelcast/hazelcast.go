@@ -25,8 +25,8 @@ import (
 	jsoniter "github.com/json-iterator/go"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 // Hazelcast state store.

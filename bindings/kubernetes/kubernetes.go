@@ -30,9 +30,9 @@ import (
 	"k8s.io/client-go/tools/cache"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	kubeclient "github.com/liuxd6825/components-contrib/internal/authentication/kubernetes"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	kubeclient "github.com/liuxd6825/dapr-components-contrib/internal/authentication/kubernetes"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type kubernetesInput struct {

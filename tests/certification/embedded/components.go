@@ -14,13 +14,13 @@ limitations under the License.
 package embedded
 
 import (
-	"github.com/liuxd6825/dapr/pkg/runtime"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr/pkg/runtime"
 
 	// Name resolutions.
-	nrConsul "github.com/liuxd6825/components-contrib/nameresolution/consul"
-	nrKubernetes "github.com/liuxd6825/components-contrib/nameresolution/kubernetes"
-	nrMdns "github.com/liuxd6825/components-contrib/nameresolution/mdns"
+	nrConsul "github.com/liuxd6825/dapr-components-contrib/nameresolution/consul"
+	nrKubernetes "github.com/liuxd6825/dapr-components-contrib/nameresolution/kubernetes"
+	nrMdns "github.com/liuxd6825/dapr-components-contrib/nameresolution/mdns"
 
 	nrLoader "github.com/liuxd6825/dapr/pkg/components/nameresolution"
 )

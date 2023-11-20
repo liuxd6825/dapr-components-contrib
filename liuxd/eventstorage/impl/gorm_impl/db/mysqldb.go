@@ -2,7 +2,7 @@ package db
 
 import (
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
 	"strconv"
 )
 

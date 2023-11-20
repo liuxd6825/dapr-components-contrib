@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/pubsub"
-	"github.com/liuxd6825/components-contrib/pubsub/jetstream"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub/jetstream"
 )
 
 func TestAuthentication(t *testing.T) {

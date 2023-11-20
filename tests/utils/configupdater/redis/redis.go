@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/configuration"
-	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/tests/utils/configupdater"
+	"github.com/liuxd6825/dapr-components-contrib/configuration"
+	rediscomponent "github.com/liuxd6825/dapr-components-contrib/internal/component/redis"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/tests/utils/configupdater"
 )
 
 const (

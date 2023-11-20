@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	"github.com/liuxd6825/components-contrib/liuxd/common/utils"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/model"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/repository"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/utils"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/model"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/repository"
 )
 
 type SnapshotService interface {

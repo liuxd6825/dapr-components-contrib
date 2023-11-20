@@ -24,8 +24,8 @@ import (
 	"gopkg.in/yaml.v3"
 
 	"github.com/dapr/kit/logger"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/middleware"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/middleware"
 )
 
 type contextKey int

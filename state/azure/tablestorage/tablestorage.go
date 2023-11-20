@@ -52,9 +52,9 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 const (

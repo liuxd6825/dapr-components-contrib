@@ -30,8 +30,8 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // MQTT allows sending and receiving data to/from an MQTT broker.

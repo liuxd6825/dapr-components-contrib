@@ -19,10 +19,10 @@ import (
 	"errors"
 	"testing"
 
-	mdata "github.com/liuxd6825/components-contrib/metadata"
+	mdata "github.com/liuxd6825/dapr-components-contrib/metadata"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 
 	"github.com/stretchr/testify/assert"
 )

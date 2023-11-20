@@ -1,7 +1,7 @@
 package repository_impl
 
 import (
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/model"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/model"
 	"golang.org/x/net/context"
 	"testing"
 )

@@ -22,8 +22,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/liuxd6825/components-contrib/configuration"
-	pgauth "github.com/liuxd6825/components-contrib/internal/authentication/postgresql"
+	"github.com/liuxd6825/dapr-components-contrib/configuration"
+	pgauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/postgresql"
 )
 
 func TestSelectAllQuery(t *testing.T) {

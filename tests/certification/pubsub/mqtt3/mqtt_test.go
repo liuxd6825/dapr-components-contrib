@@ -26,14 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/multierr"
 
 	// Pub/Sub.
 
-	pubsub_mqtt "github.com/liuxd6825/components-contrib/pubsub/mqtt3"
+	pubsub_mqtt "github.com/liuxd6825/dapr-components-contrib/pubsub/mqtt3"
 	pubsub_loader "github.com/liuxd6825/dapr/pkg/components/pubsub"
 	"github.com/liuxd6825/dapr/pkg/config/protocol"
 
@@ -43,15 +42,15 @@ import (
 	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/retry"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/retry"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/watcher"
 )
 
 const (

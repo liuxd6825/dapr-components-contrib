@@ -13,7 +13,7 @@ limitations under the License.
 
 package configuration
 
-import "github.com/liuxd6825/components-contrib/metadata"
+import "github.com/liuxd6825/dapr-components-contrib/metadata"
 
 // Metadata contains a configuration store specific set of metadata property.
 type Metadata struct {

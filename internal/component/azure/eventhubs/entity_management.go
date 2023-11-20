@@ -28,7 +28,7 @@ import (
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
 	"github.com/dapr/kit/retry"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
 )
 
 const (

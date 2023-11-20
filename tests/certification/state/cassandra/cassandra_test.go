@@ -22,18 +22,18 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/liuxd6825/components-contrib/state"
-	state_cassandra "github.com/liuxd6825/components-contrib/state/cassandra"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	state_cassandra "github.com/liuxd6825/dapr-components-contrib/state/cassandra"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
 	"github.com/liuxd6825/dapr/pkg/runtime"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	goclient "github.com/liuxd6825/go-sdk/client"
-	"github.com/dapr/kit/logger"
 )
 
 const (

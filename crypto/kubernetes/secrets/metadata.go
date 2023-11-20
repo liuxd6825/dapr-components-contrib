@@ -14,8 +14,8 @@ limitations under the License.
 package secrets
 
 import (
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	"github.com/liuxd6825/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type secretsMetadata struct {

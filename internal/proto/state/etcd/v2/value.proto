@@ -18,7 +18,7 @@ package dapr.proto.components.state.v2;
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 
-option go_package = "github.com/liuxd6825/components-contrib/internal/proto/state/etcd/v2";
+option go_package = "github.com/liuxd6825/dapr-components-contrib/internal/proto/state/etcd/v2";
 
 
 // Value is the value of the state key item. It contains the underlying data as

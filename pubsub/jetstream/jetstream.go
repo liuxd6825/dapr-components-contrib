@@ -25,8 +25,8 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 type jetstreamPubSub struct {

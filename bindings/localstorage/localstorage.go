@@ -30,8 +30,8 @@ import (
 	"github.com/google/uuid"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (
@@ -43,7 +43,7 @@ var disallowedRootPaths = []string{
 	filepath.Clean("/proc"),
 	filepath.Clean("/sys"),
 	filepath.Clean("/boot"),
-	// See: https://github.com/liuxd6825/components-contrib/issues/2444
+	// See: https://github.com/liuxd6825/dapr-components-contrib/issues/2444
 	filepath.Clean("/var/run/secrets"),
 }
 

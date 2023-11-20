@@ -14,7 +14,7 @@ limitations under the License.
 package state
 
 import (
-	"github.com/liuxd6825/components-contrib/state/query"
+	"github.com/liuxd6825/dapr-components-contrib/state/query"
 )
 
 // GetRequest is the object describing a state "fetch" request.

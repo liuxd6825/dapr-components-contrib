@@ -20,7 +20,7 @@ import (
 
 	"github.com/dapr/kit/config"
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/nameresolution"
+	"github.com/liuxd6825/dapr-components-contrib/nameresolution"
 )
 
 const (

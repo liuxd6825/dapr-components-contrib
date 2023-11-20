@@ -27,17 +27,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	stateMysql "github.com/liuxd6825/components-contrib/state/mysql"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	stateMysql "github.com/liuxd6825/dapr-components-contrib/state/mysql"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	stateLoader "github.com/liuxd6825/dapr/pkg/components/state"
 	daprTesting "github.com/liuxd6825/dapr/pkg/testing"
 	daprClient "github.com/liuxd6825/go-sdk/client"
-	"github.com/dapr/kit/logger"
 )
 
 const (

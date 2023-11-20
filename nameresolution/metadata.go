@@ -13,7 +13,7 @@ limitations under the License.
 
 package nameresolution
 
-import "github.com/liuxd6825/components-contrib/metadata"
+import "github.com/liuxd6825/dapr-components-contrib/metadata"
 
 const (
 	// HostAddress is the address of the instance.

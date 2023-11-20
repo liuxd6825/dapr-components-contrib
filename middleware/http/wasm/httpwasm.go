@@ -26,9 +26,9 @@ import (
 	wasmnethttp "github.com/http-wasm/http-wasm-host-go/handler/nethttp"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/wasm"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	dapr "github.com/liuxd6825/components-contrib/middleware"
+	"github.com/liuxd6825/dapr-components-contrib/internal/wasm"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	dapr "github.com/liuxd6825/dapr-components-contrib/middleware"
 )
 
 type middleware struct {

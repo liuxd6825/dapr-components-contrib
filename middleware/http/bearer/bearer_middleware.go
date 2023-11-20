@@ -27,9 +27,9 @@ import (
 	"github.com/lestrrat-go/jwx/v2/jwt"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/httputils"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/middleware"
+	"github.com/liuxd6825/dapr-components-contrib/internal/httputils"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/middleware"
 )
 
 const (

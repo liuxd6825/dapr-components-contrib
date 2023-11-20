@@ -29,9 +29,9 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/bindings"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

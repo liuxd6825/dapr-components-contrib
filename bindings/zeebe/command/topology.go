@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
 )
 
 func (z *ZeebeCommand) topology(ctx context.Context) (*bindings.InvokeResponse, error) {

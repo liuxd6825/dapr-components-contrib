@@ -14,7 +14,7 @@ limitations under the License.
 package bindings
 
 import (
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 // ReadResponse is the return object from an dapr input binding.

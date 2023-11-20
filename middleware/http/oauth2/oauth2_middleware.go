@@ -25,10 +25,10 @@ import (
 	"golang.org/x/oauth2"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/httputils"
-	"github.com/liuxd6825/components-contrib/internal/utils"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/middleware"
+	"github.com/liuxd6825/dapr-components-contrib/internal/httputils"
+	"github.com/liuxd6825/dapr-components-contrib/internal/utils"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/middleware"
 )
 
 // Metadata is the oAuth middleware config.

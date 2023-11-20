@@ -16,7 +16,7 @@ package terraform
 import (
 	"os/exec"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 )
 
 type Terraform struct {

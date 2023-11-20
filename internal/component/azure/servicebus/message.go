@@ -21,9 +21,9 @@ import (
 	azservicebus "github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus"
 
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/bindings"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 const (

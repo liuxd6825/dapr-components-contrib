@@ -20,7 +20,7 @@ import (
 	"github.com/apache/pulsar-client-go/pulsar"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 func TestParsePulsarMetadata(t *testing.T) {

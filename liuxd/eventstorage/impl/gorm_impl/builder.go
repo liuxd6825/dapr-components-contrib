@@ -2,10 +2,10 @@ package gorm_impl
 
 import (
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/gorm_impl/db"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/gorm_impl/repository_impl"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/gorm_impl/db"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/gorm_impl/repository_impl"
 )
 
 const (

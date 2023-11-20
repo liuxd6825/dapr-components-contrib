@@ -24,9 +24,9 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/to"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // List of operations.

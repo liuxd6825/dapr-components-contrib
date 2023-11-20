@@ -25,7 +25,7 @@ import (
 	"golang.org/x/exp/maps"
 
 	"github.com/dapr/kit/logger"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
 )
 
 // Type that matches Client.EnsureTopic and Client.EnsureSubscription

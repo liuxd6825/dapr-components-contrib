@@ -20,8 +20,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/liuxd6825/components-contrib/state"
-	stateutils "github.com/liuxd6825/components-contrib/state/utils"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	stateutils "github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 type widget struct {

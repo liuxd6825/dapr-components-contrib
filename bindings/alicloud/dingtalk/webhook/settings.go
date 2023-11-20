@@ -20,7 +20,7 @@ package webhook
 import (
 	"errors"
 
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type Settings struct {

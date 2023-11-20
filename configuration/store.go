@@ -16,7 +16,7 @@ package configuration
 import (
 	"context"
 
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // Store is an interface to perform operations on store.

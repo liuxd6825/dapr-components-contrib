@@ -17,7 +17,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 // dbAccess is a private interface which enables unit testing of Oracle Database.

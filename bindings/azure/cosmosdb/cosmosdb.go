@@ -25,9 +25,9 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // CosmosDB allows performing state operations on collections.

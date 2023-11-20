@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 	"github.com/stretchr/testify/assert"
 )
 

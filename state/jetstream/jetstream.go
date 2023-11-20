@@ -26,9 +26,9 @@ import (
 	"github.com/nats-io/nkeys"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	"github.com/liuxd6825/components-contrib/state/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 // StateStore is a nats jetstream KV state store.

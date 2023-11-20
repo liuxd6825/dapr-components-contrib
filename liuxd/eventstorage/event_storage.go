@@ -3,8 +3,8 @@ package eventstorage
 import (
 	"context"
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/dto"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/dto"
 	pubsub_adapter "github.com/liuxd6825/dapr/pkg/runtime/pubsub"
 )
 

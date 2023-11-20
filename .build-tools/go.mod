@@ -1,9 +1,9 @@
-module github.com/liuxd6825/components-contrib/build-tools
+module github.com/liuxd6825/dapr-components-contrib/build-tools
 
 go 1.20
 
 require (
-	github.com/liuxd6825/components-contrib v0.0.0
+	github.com/liuxd6825/dapr-components-contrib v0.0.0
 	github.com/invopop/jsonschema v0.6.0
 	github.com/spf13/cobra v1.6.1
 	github.com/xeipuuv/gojsonschema v1.2.1-0.20201027075954-b076d39a02e5
@@ -27,4 +27,4 @@ require (
 	k8s.io/apimachinery v0.26.3 // indirect
 )
 
-replace github.com/liuxd6825/components-contrib => ../
+replace github.com/liuxd6825/dapr-components-contrib => ../

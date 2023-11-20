@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/model"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/model"
 )
 
 type AggregateRepository interface {

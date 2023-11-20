@@ -13,7 +13,7 @@ limitations under the License.
 
 package pubsub
 
-import "github.com/liuxd6825/components-contrib/metadata"
+import "github.com/liuxd6825/dapr-components-contrib/metadata"
 
 // Metadata represents a set of message-bus specific properties.
 type Metadata struct {

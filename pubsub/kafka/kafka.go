@@ -22,11 +22,11 @@ import (
 
 	"github.com/dapr/kit/logger"
 
-	"github.com/liuxd6825/components-contrib/internal/component/kafka"
-	"github.com/liuxd6825/components-contrib/internal/utils"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/internal/component/kafka"
+	"github.com/liuxd6825/dapr-components-contrib/internal/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 type PubSub struct {

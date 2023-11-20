@@ -19,8 +19,8 @@ import (
 
 	"github.com/nats-io/nats.go"
 
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 type metadata struct {

@@ -26,7 +26,7 @@ import (
 	"github.com/cloudevents/sdk-go/v2/event"
 	"github.com/stretchr/testify/assert"
 
-	contribContenttype "github.com/liuxd6825/components-contrib/contenttype"
+	contribContenttype "github.com/liuxd6825/dapr-components-contrib/contenttype"
 )
 
 func TestCreateCloudEventsEnvelope(t *testing.T) {

@@ -21,9 +21,9 @@ import (
 	"time"
 
 	"github.com/dapr/kit/logger"
-	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
-	"github.com/liuxd6825/components-contrib/lock"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	rediscomponent "github.com/liuxd6825/dapr-components-contrib/internal/component/redis"
+	"github.com/liuxd6825/dapr-components-contrib/lock"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const unlockScript = `local v = redis.call("get",KEYS[1]); if v==false then return -1 end; if v~=ARGV[1] then return -2 else return redis.call("del",KEYS[1]) end`

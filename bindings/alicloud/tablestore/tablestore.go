@@ -25,8 +25,8 @@ import (
 	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

@@ -21,8 +21,8 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	mdata "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	mdata "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 func getTestMetadata() map[string]string {

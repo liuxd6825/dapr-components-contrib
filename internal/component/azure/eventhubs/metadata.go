@@ -21,8 +21,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/messaging/azeventhubs"
 
 	"github.com/dapr/kit/logger"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	"github.com/liuxd6825/components-contrib/metadata"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type AzureEventHubsMetadata struct {

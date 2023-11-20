@@ -20,8 +20,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/couchbase/gocb.v1"
 
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 func TestValidateMetadata(t *testing.T) {

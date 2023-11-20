@@ -26,8 +26,8 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
-	"github.com/liuxd6825/components-contrib/state"
+	rediscomponent "github.com/liuxd6825/dapr-components-contrib/internal/component/redis"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 func TestGetKeyVersion(t *testing.T) {

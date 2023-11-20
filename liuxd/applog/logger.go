@@ -2,7 +2,7 @@ package applog
 
 import (
 	"context"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
 	pubsub_adapter "github.com/liuxd6825/dapr/pkg/runtime/pubsub"
 	"time"
 )

@@ -22,8 +22,8 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 func getTestMetadata() map[string]string {
@@ -46,7 +46,7 @@ func getNewRethinkActorBinding() *Binding {
 }
 
 /*
-go test github.com/liuxd6825/components-contrib/bindings/rethinkdb/statechange \
+go test github.com/liuxd6825/dapr-components-contrib/bindings/rethinkdb/statechange \
 	-run ^TestBinding$ -count 1
 */
 

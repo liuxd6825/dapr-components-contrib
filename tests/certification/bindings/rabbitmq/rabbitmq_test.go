@@ -24,29 +24,29 @@ import (
 	"testing"
 	"time"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/network"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/multierr"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	binding_rabbitmq "github.com/liuxd6825/components-contrib/bindings/rabbitmq"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	binding_rabbitmq "github.com/liuxd6825/dapr-components-contrib/bindings/rabbitmq"
 	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
 	"github.com/liuxd6825/dapr/pkg/config/protocol"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	daprClient "github.com/liuxd6825/go-sdk/client"
 	"github.com/liuxd6825/go-sdk/service/common"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/retry"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/retry"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/watcher"
 )
 
 const (

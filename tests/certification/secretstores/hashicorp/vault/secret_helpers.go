@@ -16,7 +16,7 @@ package vault_test
 import (
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 	"github.com/liuxd6825/go-sdk/client"
 	"github.com/stretchr/testify/assert"
 )

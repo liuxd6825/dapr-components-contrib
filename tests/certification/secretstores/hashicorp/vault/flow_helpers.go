@@ -19,16 +19,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/liuxd6825/components-contrib/secretstores/hashicorp/vault"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores/hashicorp/vault"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 	"github.com/liuxd6825/dapr/pkg/runtime"
 	"github.com/liuxd6825/dapr/pkg/runtime/registry"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
-	"github.com/dapr/kit/logger"
 	"github.com/stretchr/testify/assert"
 )
 

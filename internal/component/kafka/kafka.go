@@ -22,7 +22,7 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 // Kafka allows reading/writing to a Kafka consumer group.

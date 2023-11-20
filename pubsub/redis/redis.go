@@ -23,9 +23,9 @@ import (
 	"time"
 
 	"github.com/dapr/kit/logger"
-	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	rediscomponent "github.com/liuxd6825/dapr-components-contrib/internal/component/redis"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 const (

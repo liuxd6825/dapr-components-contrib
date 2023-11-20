@@ -22,8 +22,8 @@ import (
 
 	"github.com/google/uuid"
 
-	contribContenttype "github.com/liuxd6825/components-contrib/contenttype"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	contribContenttype "github.com/liuxd6825/dapr-components-contrib/contenttype"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

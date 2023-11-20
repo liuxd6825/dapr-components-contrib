@@ -22,13 +22,13 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 
-	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
+	awsAuth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/aws"
 
 	"github.com/aws/aws-sdk-go/service/ses"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 const (

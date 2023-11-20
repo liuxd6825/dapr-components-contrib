@@ -25,10 +25,10 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	internalsql "github.com/liuxd6825/components-contrib/internal/component/sql"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	"github.com/liuxd6825/components-contrib/state/utils"
+	internalsql "github.com/liuxd6825/dapr-components-contrib/internal/component/sql"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 // KeyType defines type of the table identifier.

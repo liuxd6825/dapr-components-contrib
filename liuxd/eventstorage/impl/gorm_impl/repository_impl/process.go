@@ -3,8 +3,8 @@ package repository_impl
 import (
 	"errors"
 	"fmt"
-	"github.com/liuxd6825/components-contrib/liuxd/common/rsql"
-	"github.com/liuxd6825/components-contrib/liuxd/common/utils"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/rsql"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common/utils"
 )
 
 type Process interface {

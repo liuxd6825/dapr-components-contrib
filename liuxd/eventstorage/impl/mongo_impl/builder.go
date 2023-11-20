@@ -2,10 +2,10 @@ package mongo_impl
 
 import (
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage"
-	db2 "github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
-	repository_impl2 "github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/mongo_impl/repository_impl"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage"
+	db2 "github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
+	repository_impl2 "github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/mongo_impl/repository_impl"
 )
 
 const (

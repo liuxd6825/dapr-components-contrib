@@ -13,6 +13,6 @@ services:
     network_mode:
       service:nats
     volumes:
-      - ../../../../:/go/src/github.com/liuxd6825/components-contrib:cached
+      - ../../../../:/go/src/github.com/liuxd6825/dapr-components-contrib:cached
     depends_on:
       - nats

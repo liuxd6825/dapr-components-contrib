@@ -30,10 +30,10 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
-	"github.com/liuxd6825/components-contrib/bindings"
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	"github.com/liuxd6825/components-contrib/internal/component/azure/blobstorage"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/dapr-components-contrib/internal/component/azure/blobstorage"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 const (

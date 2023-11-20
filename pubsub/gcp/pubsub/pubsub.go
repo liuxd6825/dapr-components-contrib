@@ -30,8 +30,8 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/dapr/kit/logger"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 const (

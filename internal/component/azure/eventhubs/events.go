@@ -24,8 +24,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/spf13/cast"
 
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 // Type for the handler for messages coming in from the subscriptions.

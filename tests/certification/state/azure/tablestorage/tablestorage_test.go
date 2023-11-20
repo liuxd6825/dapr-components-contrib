@@ -21,15 +21,15 @@ import (
 	"testing"
 
 	"github.com/dapr/kit/logger"
-	table "github.com/liuxd6825/components-contrib/state/azure/tablestorage"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	table "github.com/liuxd6825/dapr-components-contrib/state/azure/tablestorage"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
 	"github.com/liuxd6825/go-sdk/client"
 
-	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
+	secretstore_env "github.com/liuxd6825/dapr-components-contrib/secretstores/local/env"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	"github.com/stretchr/testify/assert"

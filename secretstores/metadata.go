@@ -13,7 +13,7 @@ limitations under the License.
 
 package secretstores
 
-import "github.com/liuxd6825/components-contrib/metadata"
+import "github.com/liuxd6825/dapr-components-contrib/metadata"
 
 // DefaultSecretRefKeyName is the default key if secretKeyRef.key is not given.
 const DefaultSecretRefKeyName = "_value"

@@ -23,10 +23,10 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	impl "github.com/liuxd6825/components-contrib/internal/component/azure/eventhubs"
-	"github.com/liuxd6825/components-contrib/internal/utils"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/pubsub"
+	impl "github.com/liuxd6825/dapr-components-contrib/internal/component/azure/eventhubs"
+	"github.com/liuxd6825/dapr-components-contrib/internal/utils"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/pubsub"
 )
 
 // AzureEventHubs allows sending/receiving Azure Event Hubs events.

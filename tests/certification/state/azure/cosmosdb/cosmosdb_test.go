@@ -24,18 +24,18 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 
-	"github.com/liuxd6825/components-contrib/metadata"
-	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
-	"github.com/liuxd6825/components-contrib/state"
-	cosmosdb "github.com/liuxd6825/components-contrib/state/azure/cosmosdb"
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	secretstore_env "github.com/liuxd6825/dapr-components-contrib/secretstores/local/env"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	cosmosdb "github.com/liuxd6825/dapr-components-contrib/state/azure/cosmosdb"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
 	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	daprClient "github.com/liuxd6825/go-sdk/client"
-	"github.com/dapr/kit/logger"
 )
 
 var log = logger.NewLogger("dapr.components")

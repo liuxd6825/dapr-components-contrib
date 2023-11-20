@@ -16,10 +16,8 @@ package main
 import (
 	_ "embed"
 
-	"gopkg.in/yaml.v3"
-
-	"github.com/liuxd6825/components-contrib/build-tools/cmd"
-	"github.com/liuxd6825/components-contrib/build-tools/pkg/metadataschema"
+	"github.com/liuxd6825/dapr-components-contrib/build-tools/cmd"
+	"github.com/liuxd6825/dapr-components-contrib/build-tools/pkg/metadataschema"
 )
 
 var (

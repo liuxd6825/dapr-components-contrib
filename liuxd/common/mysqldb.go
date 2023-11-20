@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

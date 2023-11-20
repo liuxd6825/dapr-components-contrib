@@ -30,10 +30,10 @@ import (
 
 	"github.com/dapr/kit/config"
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/contenttype"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
-	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
+	"github.com/liuxd6825/dapr-components-contrib/contenttype"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/tests/conformance/utils"
 )
 
 type ValueType struct {

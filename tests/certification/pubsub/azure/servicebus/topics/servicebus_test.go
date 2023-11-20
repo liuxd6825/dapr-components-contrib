@@ -29,8 +29,8 @@ import (
 	// Pub-Sub.
 
 	"github.com/dapr/kit/logger"
-	pubsub_servicebus "github.com/liuxd6825/components-contrib/pubsub/azure/servicebus/topics"
-	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
+	pubsub_servicebus "github.com/liuxd6825/dapr-components-contrib/pubsub/azure/servicebus/topics"
+	secretstore_env "github.com/liuxd6825/dapr-components-contrib/secretstores/local/env"
 	pubsub_loader "github.com/liuxd6825/dapr/pkg/components/pubsub"
 	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
 	"github.com/liuxd6825/dapr/pkg/config/protocol"
@@ -40,13 +40,13 @@ import (
 	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/watcher"
 )
 
 const (

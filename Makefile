@@ -224,8 +224,8 @@ check-component-metadata:
 	$(RUN_BUILD_TOOLS) generate-metadata-analyzer-app --outputfile ./metadataanalyzer/main.go
 	cd metadataanalyzer && \
 	go mod init metadataanalyzer && \
-	go get "github.com/liuxd6825/components-contrib@master" && \
-	go mod edit -replace "github.com/liuxd6825/components-contrib"="../" && \
+	go get "github.com/liuxd6825/dapr-components-contrib@master" && \
+	go mod edit -replace "github.com/liuxd6825/dapr-components-contrib"="../" && \
 	go mod tidy && \
 	go build -tags metadata . && \
 	rm ./go.mod && rm ./go.sum && rm ./main.go && \

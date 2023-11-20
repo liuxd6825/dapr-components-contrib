@@ -25,8 +25,8 @@ import (
 	"google.golang.org/api/option"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/secretstores"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores"
 
 	"github.com/googleapis/gax-go/v2"
 )

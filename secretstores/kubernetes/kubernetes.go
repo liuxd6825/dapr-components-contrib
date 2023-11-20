@@ -23,9 +23,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 
 	"github.com/dapr/kit/logger"
-	kubeclient "github.com/liuxd6825/components-contrib/internal/authentication/kubernetes"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/secretstores"
+	kubeclient "github.com/liuxd6825/dapr-components-contrib/internal/authentication/kubernetes"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores"
 )
 
 var _ secretstores.SecretStore = (*kubernetesSecretStore)(nil)

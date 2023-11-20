@@ -27,9 +27,9 @@ import (
 	"golang.org/x/exp/slices"
 
 	"github.com/dapr/kit/config"
-	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
+	contribCrypto "github.com/liuxd6825/dapr-components-contrib/crypto"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/tests/conformance/utils"
 )
 
 const (

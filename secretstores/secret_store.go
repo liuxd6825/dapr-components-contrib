@@ -17,8 +17,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/health"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/health"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // SecretStore is the interface for a component that handles secrets management.

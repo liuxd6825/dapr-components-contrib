@@ -23,8 +23,8 @@ import (
 	csmsRegion "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/csms/v1/region"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/secretstores"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/secretstores"
 )
 
 const (

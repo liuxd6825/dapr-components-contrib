@@ -31,9 +31,9 @@ import (
 	_ "modernc.org/sqlite"
 
 	"github.com/dapr/kit/logger"
-	internalsql "github.com/liuxd6825/components-contrib/internal/component/sql"
-	"github.com/liuxd6825/components-contrib/state"
-	stateutils "github.com/liuxd6825/components-contrib/state/utils"
+	internalsql "github.com/liuxd6825/dapr-components-contrib/internal/component/sql"
+	"github.com/liuxd6825/dapr-components-contrib/state"
+	stateutils "github.com/liuxd6825/dapr-components-contrib/state/utils"
 )
 
 // DBAccess is a private interface which enables unit testing of SQLite.

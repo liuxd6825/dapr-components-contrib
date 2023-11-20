@@ -25,9 +25,9 @@ import (
 	"golang.org/x/exp/slices"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/internal/component/cloudflare/workers"
-	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/internal/component/cloudflare/workers"
+	contribMetadata "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // Link to the documentation for the component

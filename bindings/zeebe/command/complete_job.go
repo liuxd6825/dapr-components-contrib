@@ -20,7 +20,7 @@ import (
 
 	"github.com/camunda/zeebe/clients/go/v8/pkg/commands"
 
-	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
 )
 
 type completeJobPayload struct {

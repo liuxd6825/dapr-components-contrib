@@ -18,9 +18,9 @@ import (
 	"time"
 
 	"github.com/dapr/kit/ptr"
-	pgauth "github.com/liuxd6825/components-contrib/internal/authentication/postgresql"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	pgauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/postgresql"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 const (

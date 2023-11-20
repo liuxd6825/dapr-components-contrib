@@ -51,9 +51,9 @@ import (
 
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
-	storageinternal "github.com/liuxd6825/components-contrib/internal/component/azure/blobstorage"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	storageinternal "github.com/liuxd6825/dapr-components-contrib/internal/component/azure/blobstorage"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 const (

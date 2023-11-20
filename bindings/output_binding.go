@@ -17,8 +17,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/health"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/health"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // OutputBinding is the interface for an output binding, allowing users to invoke remote systems with optional payloads.

@@ -26,7 +26,7 @@ import (
 	"github.com/spf13/cast"
 
 	"github.com/dapr/kit/ptr"
-	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/dapr-components-contrib/internal/utils"
 )
 
 const (

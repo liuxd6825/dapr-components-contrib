@@ -30,9 +30,9 @@ import (
 	jsoniterator "github.com/json-iterator/go"
 
 	"github.com/dapr/kit/logger"
-	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/state"
+	awsAuth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/aws"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 // StateStore is a DynamoDB state store.

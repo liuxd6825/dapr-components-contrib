@@ -19,8 +19,8 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 
-	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
-	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	azauth "github.com/liuxd6825/dapr-components-contrib/internal/authentication/azure"
+	mdutils "github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 type BlobStorageMetadata struct {

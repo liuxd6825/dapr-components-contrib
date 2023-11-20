@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/liuxd/applog"
-	"github.com/liuxd6825/components-contrib/liuxd/common"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/applog"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/common"
 	pubsub_adapter "github.com/liuxd6825/dapr/pkg/runtime/pubsub"
 )
 

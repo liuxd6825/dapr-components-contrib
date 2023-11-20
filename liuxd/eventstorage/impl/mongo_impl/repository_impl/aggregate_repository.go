@@ -2,9 +2,9 @@ package repository_impl
 
 import (
 	"context"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/model"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/domain/repository"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/model"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/domain/repository"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage/impl/mongo_impl/db"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

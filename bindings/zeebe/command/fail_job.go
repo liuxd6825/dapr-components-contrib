@@ -22,8 +22,8 @@ import (
 
 	"github.com/camunda/zeebe/clients/go/v8/pkg/commands"
 
-	"github.com/liuxd6825/components-contrib/bindings"
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 var ErrMissingRetries = errors.New("retries is a required attribute")

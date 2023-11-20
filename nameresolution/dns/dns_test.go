@@ -19,7 +19,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/nameresolution"
+	"github.com/liuxd6825/dapr-components-contrib/nameresolution"
 )
 
 func TestResolve(t *testing.T) {

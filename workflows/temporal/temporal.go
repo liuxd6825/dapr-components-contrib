@@ -25,8 +25,8 @@ import (
 	"go.temporal.io/sdk/client"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	"github.com/liuxd6825/components-contrib/workflows"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/workflows"
 )
 
 type TemporalWF struct {

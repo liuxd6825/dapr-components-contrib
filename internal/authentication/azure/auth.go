@@ -31,7 +31,7 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"golang.org/x/crypto/pkcs12"
 
-	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
 )
 
 // EnvironmentSettings hold settings to authenticate with Azure.

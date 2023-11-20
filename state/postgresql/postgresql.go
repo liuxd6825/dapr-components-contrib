@@ -15,8 +15,8 @@ package postgresql
 
 import (
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/internal/component/postgresql"
-	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/dapr-components-contrib/internal/component/postgresql"
+	"github.com/liuxd6825/dapr-components-contrib/state"
 )
 
 // NewPostgreSQLStateStore creates a new instance of PostgreSQL state store.

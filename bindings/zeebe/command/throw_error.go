@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
 )
 
 var ErrMissingErrorCode = errors.New("errorCode is a required attribute")

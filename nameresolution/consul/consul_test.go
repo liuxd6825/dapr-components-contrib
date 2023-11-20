@@ -23,8 +23,8 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/dapr/kit/logger"
-	"github.com/liuxd6825/components-contrib/metadata"
-	nr "github.com/liuxd6825/components-contrib/nameresolution"
+	"github.com/liuxd6825/dapr-components-contrib/metadata"
+	nr "github.com/liuxd6825/dapr-components-contrib/nameresolution"
 )
 
 type mockClient struct {

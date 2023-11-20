@@ -21,15 +21,14 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/cenkalti/backoff/v4"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/multierr"
 
 	// Pub/Sub.
 
-	"github.com/liuxd6825/components-contrib/bindings"
-	bindings_kafka "github.com/liuxd6825/components-contrib/bindings/kafka"
+	"github.com/liuxd6825/dapr-components-contrib/bindings"
+	bindings_kafka "github.com/liuxd6825/dapr-components-contrib/bindings/kafka"
 	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
 	"github.com/liuxd6825/dapr/pkg/config/protocol"
 
@@ -41,15 +40,15 @@ import (
 	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/retry"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
-	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/retry"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/dapr-components-contrib/tests/certification/flow/watcher"
 )
 
 const (

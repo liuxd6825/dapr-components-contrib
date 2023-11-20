@@ -3,7 +3,7 @@ package db
 import (
 	"context"
 	"fmt"
-	"github.com/liuxd6825/components-contrib/liuxd/eventstorage"
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstorage"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
