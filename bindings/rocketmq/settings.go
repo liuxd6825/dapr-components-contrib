@@ -19,7 +19,7 @@ import (
 
 	rocketmq "github.com/cinience/go_rocketmq"
 
-	"github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // rocketmq.

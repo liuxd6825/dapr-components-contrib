@@ -24,9 +24,9 @@ import (
 
 	"github.com/dapr/kit/logger"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/tests/conformance/utils"
-	"github.com/dapr/components-contrib/workflows"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
+	"github.com/liuxd6825/components-contrib/workflows"
 )
 
 var testLogger = logger.NewLogger("workflowsTest")

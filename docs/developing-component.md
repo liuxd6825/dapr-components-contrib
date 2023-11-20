@@ -4,7 +4,7 @@ This document describes how to build and test new components. The Dapr runtime a
 
 ## Prerequisites
 
-1. [Dapr development environment setup](https://github.com/dapr/dapr/blob/master/docs/development/setup-dapr-development-env.md)
+1. [Dapr development environment setup](https://github.com/liuxd6825/dapr/blob/master/docs/development/setup-dapr-development-env.md)
 2. [golangci-lint](https://golangci-lint.run/usage/install/#local-installation)
 
 ## Clone dapr and component-contrib
@@ -15,10 +15,10 @@ We recommend creating a folder for Dapr and clone all repositories in that folde
 mkdir dapr
 
 # Clone dapr
-git clone https://github.com/dapr/dapr.git dapr/dapr
+git clone https://github.com/liuxd6825/dapr.git dapr/dapr
 
 # Clone component-contrib
-git clone https://github.com/dapr/components-contrib.git dapr/components-contrib
+git clone https://github.com/liuxd6825/components-contrib.git dapr/components-contrib
 
 ```
 
@@ -33,12 +33,12 @@ git clone https://github.com/dapr/components-contrib.git dapr/components-contrib
 
 | Type | Directory | Reference | Docs |
 |------|-----------|--------------------------|------|
-| State | [components-contrib/state](https://github.com/dapr/components-contrib/tree/master/state) | [Redis](https://github.com/dapr/components-contrib/tree/master/state/redis) | [concept](https://docs.dapr.io/developing-applications/building-blocks/state-management/state-management-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/state-management/howto-get-save-state/), [api spec](https://docs.dapr.io/reference/api/state_api/) |
-| Pubsub | [components-contrib/pubsub](https://github.com/dapr/components-contrib/tree/master/pubsub) | [Redis](https://github.com/dapr/components-contrib/tree/master/pubsub/redis) | [concept](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/pubsub/howto-publish-subscribe/), [api spec](https://docs.dapr.io/reference/api/pubsub_api/) |
-| Bindings | [components-contrib/bindings](https://github.com/dapr/components-contrib/tree/master/bindings) | [Kafka](https://github.com/dapr/components-contrib/tree/master/bindings/kafka) | [concept](https://docs.dapr.io/developing-applications/building-blocks/bindings/bindings-overview/), [input howto](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-triggers/), [output howto](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-bindings/), [api spec](https://docs.dapr.io/reference/api/bindings_api/) |
-| Secret Store | [components-contrib/secretstore](https://github.com/dapr/components-contrib/tree/master/secretstores) | [Kubernetes](https://github.com/dapr/components-contrib/tree/master/secretstores/kubernetes), [Azure Keyvault](https://github.com/dapr/components-contrib/tree/master/secretstores/azure/keyvault) | [concept](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/secrets/howto-secrets/)|
-| Middleware | [components-contrib/middleware](https://github.com/dapr/components-contrib/tree/master/middleware) | [Oauth2](https://github.com/dapr/components-contrib/blob/master/middleware/http/oauth2/oauth2_middleware.go) | [concept](https://docs.dapr.io/concepts/middleware-concept/), [howto](https://docs.dapr.io/operations/security/oauth/) |
-| Name Resolution | [components-contrib/nameresolution](https://github.com/dapr/components-contrib/tree/master/nameresolution) | [mdns](https://github.com/dapr/components-contrib/blob/master/nameresolution/mdns/mdns.go) | [howto](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/howto-invoke-discover-services/) |
+| State | [components-contrib/state](https://github.com/liuxd6825/components-contrib/tree/master/state) | [Redis](https://github.com/liuxd6825/components-contrib/tree/master/state/redis) | [concept](https://docs.dapr.io/developing-applications/building-blocks/state-management/state-management-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/state-management/howto-get-save-state/), [api spec](https://docs.dapr.io/reference/api/state_api/) |
+| Pubsub | [components-contrib/pubsub](https://github.com/liuxd6825/components-contrib/tree/master/pubsub) | [Redis](https://github.com/liuxd6825/components-contrib/tree/master/pubsub/redis) | [concept](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/pubsub/howto-publish-subscribe/), [api spec](https://docs.dapr.io/reference/api/pubsub_api/) |
+| Bindings | [components-contrib/bindings](https://github.com/liuxd6825/components-contrib/tree/master/bindings) | [Kafka](https://github.com/liuxd6825/components-contrib/tree/master/bindings/kafka) | [concept](https://docs.dapr.io/developing-applications/building-blocks/bindings/bindings-overview/), [input howto](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-triggers/), [output howto](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-bindings/), [api spec](https://docs.dapr.io/reference/api/bindings_api/) |
+| Secret Store | [components-contrib/secretstore](https://github.com/liuxd6825/components-contrib/tree/master/secretstores) | [Kubernetes](https://github.com/liuxd6825/components-contrib/tree/master/secretstores/kubernetes), [Azure Keyvault](https://github.com/liuxd6825/components-contrib/tree/master/secretstores/azure/keyvault) | [concept](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/), [howto](https://docs.dapr.io/developing-applications/building-blocks/secrets/howto-secrets/)|
+| Middleware | [components-contrib/middleware](https://github.com/liuxd6825/components-contrib/tree/master/middleware) | [Oauth2](https://github.com/liuxd6825/components-contrib/blob/master/middleware/http/oauth2/oauth2_middleware.go) | [concept](https://docs.dapr.io/concepts/middleware-concept/), [howto](https://docs.dapr.io/operations/security/oauth/) |
+| Name Resolution | [components-contrib/nameresolution](https://github.com/liuxd6825/components-contrib/tree/master/nameresolution) | [mdns](https://github.com/liuxd6825/components-contrib/blob/master/nameresolution/mdns/mdns.go) | [howto](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/howto-invoke-discover-services/) |
 
 ### Running unit-test
 
@@ -56,11 +56,11 @@ make lint
 
 1. Make sure you clone the `dapr/dapr` and `dapr/components-contrib` repositories side-by-side, within the same folder.
 1. In case of compatibility issues between `dapr/dapr` and `dapr/compoments-contrib` `go.mod` files during build, checkout the latest released version of `dapr/dapr`.
-1. Replace `github.com/dapr/components-contrib` with a reference to the locally-cloned `components-contrib`:
+1. Replace `github.com/liuxd6825/components-contrib` with a reference to the locally-cloned `components-contrib`:
    ```bash
-   go mod edit -replace github.com/dapr/components-contrib=../components-contrib
+   go mod edit -replace github.com/liuxd6825/components-contrib=../components-contrib
    ```
-1. Register your components by creating a file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/dapr/dapr/tree/master/cmd/daprd/components), similar to the ones in the folder (one file per component).
+1. Register your components by creating a file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/liuxd6825/dapr/tree/master/cmd/daprd/components), similar to the ones in the folder (one file per component).
 1. Build debuggable dapr binary
    ```bash
    make modtidy-all
@@ -76,24 +76,24 @@ make lint
    > Windows debuggable binary: `.\dist\windows_amd64\debug\daprd`
    > macOS (Intel) debuggable binary: `./dist/darwin_amd64/debug/daprd`
    > macOS (Apple Silicon) debuggable binary: `./dist/darwin_arm64/debug/daprd`
-1. Prepare your test app (e.g. see the binding tutorial sample apps: https://github.com/dapr/quickstarts/tree/master/tutorials/bindings/)
-1. Create a YAML for the component in './components' under app's directory (e.g. bindings tutorial: https://github.com/dapr/quickstarts/blob/master/tutorials/bindings/components)
+1. Prepare your test app (e.g. see the binding tutorial sample apps: https://github.com/liuxd6825/quickstarts/tree/master/tutorials/bindings/)
+1. Create a YAML for the component in './components' under app's directory (e.g. bindings tutorial: https://github.com/liuxd6825/quickstarts/blob/master/tutorials/bindings/components)
 1. Run your test app using Dapr CLI.
 1. Make sure your component is loaded successfully in the daprd log.
 
 ## Submit your component
 
-1. Create a Pull Request to add your component in [component-contrib](https://github.com/dapr/components-contrib/pulls) repo
+1. Create a Pull Request to add your component in [component-contrib](https://github.com/liuxd6825/components-contrib/pulls) repo
 1. Get the approval from maintainers
 1. Fetch the latest `dapr/dapr` repo
 1. Update components-contrib in `dapr/dapr`'s `go.mod` and ensure that `components-contrib` is updated to the latest version
    ```bash
    # In the folder where the dapr/dapr repo was cloned
-   go get -u github.com/dapr/components-contrib@master
+   go get -u github.com/liuxd6825/components-contrib@master
    make modtidy-all
    ```
-1. Register your components by creating a file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/dapr/dapr/tree/master/cmd/daprd/components), similar to the ones in the folder (one file per component).
-1. Create a pull request in [dapr/dapr](https://github.com/dapr/dapr/pulls).
+1. Register your components by creating a file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/liuxd6825/dapr/tree/master/cmd/daprd/components), similar to the ones in the folder (one file per component).
+1. Create a pull request in [dapr/dapr](https://github.com/liuxd6825/dapr/pulls).
 
 ## Version 2 and beyond of a component
 
@@ -109,5 +109,5 @@ In most cases, breaking changes can be avoided by using backward compatible `met
 1. Create a version subdirectory for the next major version (e.g. `bindings/redis/v2`, `bindings/redis/v3`, etc.)
 1. Copy any code into the new subdirectory that should be preserved from the previous version
 1. Submit your component as described in the previous section
-1. Register your components by creating a **new** file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/dapr/dapr/tree/master/cmd/daprd/components), *without removing the file for the previous version*. This time, append the new major version to the name, e.g. `redis/v2`.
+1. Register your components by creating a **new** file (in the `dapr/dapr` repo) in [`cmd/daprd/components`](https://github.com/liuxd6825/dapr/tree/master/cmd/daprd/components), *without removing the file for the previous version*. This time, append the new major version to the name, e.g. `redis/v2`.
 1. Validate your component as described previously

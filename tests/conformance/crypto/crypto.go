@@ -26,10 +26,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/tests/conformance/utils"
 	"github.com/dapr/kit/config"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
 )
 
 const (

@@ -21,9 +21,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 type counter struct {

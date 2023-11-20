@@ -36,12 +36,12 @@ import (
 	"github.com/lestrrat-go/jwx/v2/jwt"
 	"github.com/valyala/fasthttp"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/contenttype"
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/contenttype"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

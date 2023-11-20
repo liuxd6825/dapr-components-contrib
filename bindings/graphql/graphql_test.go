@@ -23,9 +23,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 func TestOperations(t *testing.T) {

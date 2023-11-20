@@ -25,9 +25,9 @@ import (
 	"cloud.google.com/go/pubsub"
 	"google.golang.org/api/option"
 
-	"github.com/dapr/components-contrib/bindings"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

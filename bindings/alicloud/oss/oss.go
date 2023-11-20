@@ -21,9 +21,9 @@ import (
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/google/uuid"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // AliCloudOSS is a binding for an AliCloud OSS storage bucket.

@@ -23,7 +23,7 @@ import (
 	"github.com/xeipuuv/gojsonschema"
 	"sigs.k8s.io/yaml"
 
-	"github.com/dapr/components-contrib/build-tools/pkg/metadataschema"
+	"github.com/liuxd6825/components-contrib/build-tools/pkg/metadataschema"
 )
 
 // Parser used to parse and validate component metadata YAML or JSON files.

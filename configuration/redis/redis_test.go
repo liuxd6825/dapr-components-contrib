@@ -22,11 +22,11 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	"github.com/stretchr/testify/assert"
 
-	redisComponent "github.com/dapr/components-contrib/internal/component/redis"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
+	redisComponent "github.com/liuxd6825/components-contrib/internal/component/redis"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 
-	"github.com/dapr/components-contrib/configuration"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/configuration"
 )
 
 func TestConfigurationStore_Get(t *testing.T) {

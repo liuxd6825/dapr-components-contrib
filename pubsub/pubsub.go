@@ -17,8 +17,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dapr/components-contrib/health"
-	"github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/health"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // PubSub is the interface for message buses.

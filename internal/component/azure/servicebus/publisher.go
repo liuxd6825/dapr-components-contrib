@@ -21,12 +21,12 @@ import (
 	servicebus "github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus"
 	"github.com/cenkalti/backoff/v4"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/internal/utils"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 const (

@@ -24,9 +24,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 // mockedRequestHandler acts like an upstream service returns success status code 200 and a fixed response body.

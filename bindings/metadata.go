@@ -13,7 +13,7 @@ limitations under the License.
 
 package bindings
 
-import "github.com/dapr/components-contrib/metadata"
+import "github.com/liuxd6825/components-contrib/metadata"
 
 // Metadata represents a set of binding specific properties.
 type Metadata struct {

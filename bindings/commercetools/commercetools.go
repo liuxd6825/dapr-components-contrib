@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/dapr/components-contrib/bindings"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 
 	"github.com/labd/commercetools-go-sdk/platform"
 	"golang.org/x/oauth2/clientcredentials"

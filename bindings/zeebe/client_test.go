@@ -19,9 +19,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 func TestParseMetadata(t *testing.T) {

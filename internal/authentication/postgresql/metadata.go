@@ -23,7 +23,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/dapr/components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/components-contrib/internal/authentication/azure"
 )
 
 // PostgresAuthMetadata contains authentication metadata for PostgreSQL components.

@@ -26,10 +26,10 @@ import (
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	internals "github.com/dapr/kit/crypto"
 	"github.com/dapr/kit/logger"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 var errKeyNotFound = errors.New("key not found in the vault")

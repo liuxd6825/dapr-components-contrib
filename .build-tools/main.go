@@ -18,8 +18,8 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/dapr/components-contrib/build-tools/cmd"
-	"github.com/dapr/components-contrib/build-tools/pkg/metadataschema"
+	"github.com/liuxd6825/components-contrib/build-tools/cmd"
+	"github.com/liuxd6825/components-contrib/build-tools/pkg/metadataschema"
 )
 
 var (

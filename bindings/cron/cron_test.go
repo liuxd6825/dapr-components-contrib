@@ -25,8 +25,8 @@ import (
 	"k8s.io/utils/clock"
 	clocktesting "k8s.io/utils/clock/testing"
 
-	"github.com/dapr/components-contrib/bindings"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
 )
 
 func getTestMetadata(schedule string) bindings.Metadata {

@@ -26,11 +26,11 @@ import (
 	"github.com/google/uuid"
 	"k8s.io/utils/clock"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/state/utils"
 )
 
 type inMemoryStore struct {

@@ -17,7 +17,7 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/dapr/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
 )
 
 func PeriodicError(ctx flow.Context, frequency uint64) func() error {

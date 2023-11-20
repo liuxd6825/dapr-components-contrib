@@ -24,10 +24,10 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	"github.com/stretchr/testify/assert"
 
-	rediscomponent "github.com/dapr/components-contrib/internal/component/redis"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 func TestGetKeyVersion(t *testing.T) {

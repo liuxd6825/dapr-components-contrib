@@ -28,10 +28,10 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/state/utils"
 )
 
 const (

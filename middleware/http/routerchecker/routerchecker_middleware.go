@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"regexp"
 
-	"github.com/dapr/components-contrib/internal/httputils"
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/httputils"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 // Metadata is the routerchecker middleware config.

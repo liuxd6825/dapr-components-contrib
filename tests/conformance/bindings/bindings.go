@@ -25,11 +25,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/tests/conformance/utils"
 	"github.com/dapr/kit/config"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
 )
 
 const (

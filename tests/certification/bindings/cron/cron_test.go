@@ -29,20 +29,20 @@ import (
 	"k8s.io/utils/clock"
 	clocktesting "k8s.io/utils/clock/testing"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/bindings/cron"
-	"github.com/dapr/dapr/pkg/config/protocol"
-	"github.com/dapr/go-sdk/service/common"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/bindings/cron"
+	"github.com/liuxd6825/dapr/pkg/config/protocol"
+	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/app"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
 
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 )
 
 type cronTest struct {

@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dapr/components-contrib/configuration"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/configuration"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 type metadata struct {

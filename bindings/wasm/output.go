@@ -29,10 +29,10 @@ import (
 	"github.com/tetratelabs/wazero/api"
 	"github.com/tetratelabs/wazero/imports/wasi_snapshot_preview1"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/internal/wasm"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/internal/wasm"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // ExecuteOperation is defined here as it isn't in the bindings package.

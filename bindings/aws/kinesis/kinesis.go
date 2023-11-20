@@ -32,10 +32,10 @@ import (
 	"github.com/vmware/vmware-go-kcl/clientlibrary/interfaces"
 	"github.com/vmware/vmware-go-kcl/clientlibrary/worker"
 
-	"github.com/dapr/components-contrib/bindings"
-	awsAuth "github.com/dapr/components-contrib/internal/authentication/aws"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // AWSKinesis allows receiving and sending data to/from AWS Kinesis stream.

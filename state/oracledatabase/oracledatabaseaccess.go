@@ -26,10 +26,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	stateutils "github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	stateutils "github.com/liuxd6825/components-contrib/state/utils"
 
 	// Blank import for the underlying Oracle Database driver.
 	_ "github.com/sijms/go-ora/v2"

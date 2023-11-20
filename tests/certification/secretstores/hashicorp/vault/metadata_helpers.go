@@ -17,10 +17,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dapr/components-contrib/secretstores"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/go-sdk/client"
 	"github.com/golang/protobuf/ptypes/empty"
+	"github.com/liuxd6825/components-contrib/secretstores"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/go-sdk/client"
 	"github.com/stretchr/testify/assert"
 )
 

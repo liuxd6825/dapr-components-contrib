@@ -18,8 +18,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 func TestGetEtcdMetadata(t *testing.T) {

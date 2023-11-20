@@ -19,9 +19,9 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
-	"github.com/dapr/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const defaultRequestTimeout = 30 * time.Second

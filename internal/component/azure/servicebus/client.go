@@ -24,8 +24,8 @@ import (
 	"github.com/cenkalti/backoff/v4"
 	"golang.org/x/exp/maps"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
 	"github.com/dapr/kit/logger"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
 )
 
 // Type that matches Client.EnsureTopic and Client.EnsureSubscription

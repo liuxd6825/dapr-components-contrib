@@ -18,16 +18,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dapr/dapr/pkg/runtime"
-	"github.com/dapr/dapr/pkg/runtime/registry"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	"github.com/liuxd6825/dapr/pkg/runtime/registry"
 
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
 
-	rtembedded "github.com/dapr/components-contrib/tests/certification/embedded"
+	rtembedded "github.com/liuxd6825/components-contrib/tests/certification/embedded"
 	// Go SDK
-	dapr "github.com/dapr/go-sdk/client"
+	dapr "github.com/liuxd6825/go-sdk/client"
 )
 
 type (

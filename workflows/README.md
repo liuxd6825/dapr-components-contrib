@@ -12,4 +12,4 @@ When using temporal as the workflow, the task queue must be provided as an Optio
 
 ## Associated Information
 
-The following link to the workflow proposal will provide more information on this feature area: https://github.com/dapr/dapr/issues/4576
+The following link to the workflow proposal will provide more information on this feature area: https://github.com/liuxd6825/dapr/issues/4576

@@ -37,16 +37,16 @@ import (
 	// Blank import for the underlying SQLite Driver.
 	_ "modernc.org/sqlite"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
 
-	"github.com/dapr/components-contrib/state"
-	state_sqlite "github.com/dapr/components-contrib/state/sqlite"
-	state_loader "github.com/dapr/dapr/pkg/components/state"
-	"github.com/dapr/dapr/pkg/runtime"
-	"github.com/dapr/go-sdk/client"
+	"github.com/liuxd6825/components-contrib/state"
+	state_sqlite "github.com/liuxd6825/components-contrib/state/sqlite"
+	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	"github.com/liuxd6825/go-sdk/client"
 	"github.com/dapr/kit/logger"
 )
 

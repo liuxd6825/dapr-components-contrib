@@ -9,11 +9,11 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/dapr/components-contrib/configuration"
-	pgauth "github.com/dapr/components-contrib/internal/authentication/postgresql"
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/tests/utils/configupdater"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/configuration"
+	pgauth "github.com/liuxd6825/components-contrib/internal/authentication/postgresql"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/tests/utils/configupdater"
 )
 
 type ConfigUpdater struct {

@@ -26,18 +26,18 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings/azure/blobstorage"
-	secretstore_env "github.com/dapr/components-contrib/secretstores/local/env"
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
-	secretstores_loader "github.com/dapr/dapr/pkg/components/secretstores"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
-	daprsdk "github.com/dapr/go-sdk/client"
+	"github.com/liuxd6825/components-contrib/bindings/azure/blobstorage"
+	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
+	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
+	daprsdk "github.com/liuxd6825/go-sdk/client"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
 
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/blob"

@@ -20,9 +20,9 @@ import (
 
 	sbadmin "github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus/admin"
 
-	mdutils "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
 )
 
 // Metadata options for Service Bus components.

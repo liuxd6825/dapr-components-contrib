@@ -28,10 +28,10 @@ import (
 	"github.com/camunda/zeebe/clients/go/v8/pkg/worker"
 	"github.com/camunda/zeebe/clients/go/v8/pkg/zbc"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/bindings/zeebe"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/bindings/zeebe"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 var ErrMissingJobType = errors.New("jobType is a required attribute")

@@ -27,12 +27,12 @@ import (
 
 	"github.com/google/uuid"
 
-	sqlCleanup "github.com/dapr/components-contrib/internal/component/sql"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	sqlCleanup "github.com/liuxd6825/components-contrib/internal/component/sql"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // Optimistic Concurrency is implemented using a string column that stores a UUID.

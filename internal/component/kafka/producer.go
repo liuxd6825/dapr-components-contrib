@@ -19,7 +19,7 @@ import (
 
 	"github.com/IBM/sarama"
 
-	"github.com/dapr/components-contrib/pubsub"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 func getSyncProducer(config sarama.Config, brokers []string, maxMessageBytes int) (sarama.SyncProducer, error) {

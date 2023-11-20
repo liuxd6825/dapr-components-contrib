@@ -21,8 +21,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
 	"github.com/dapr/kit/logger"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
 )
 
 func TestClientInitFailures(t *testing.T) {

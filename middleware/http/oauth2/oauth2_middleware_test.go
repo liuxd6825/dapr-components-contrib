@@ -23,8 +23,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 func TestOAuth2CreatesAuthorizationHeaderWhenInSessionState(t *testing.T) {

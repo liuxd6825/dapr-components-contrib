@@ -22,8 +22,8 @@ import (
 
 	"github.com/dapr/kit/logger"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 type rabbitmqMetadata struct {

@@ -23,10 +23,10 @@ import (
 	"github.com/alibaba/sentinel-golang/core/base"
 	"github.com/alibaba/sentinel-golang/core/config"
 
-	"github.com/dapr/components-contrib/internal/httputils"
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/httputils"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 type middlewareMetadata struct {

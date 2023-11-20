@@ -28,24 +28,24 @@ import (
 	"go.uber.org/multierr"
 
 	// Pub-Sub.
-	pubsub_snssqs "github.com/dapr/components-contrib/pubsub/aws/snssqs"
-	secretstore_env "github.com/dapr/components-contrib/secretstores/local/env"
-	pubsub_loader "github.com/dapr/dapr/pkg/components/pubsub"
-	secretstores_loader "github.com/dapr/dapr/pkg/components/secretstores"
-	"github.com/dapr/dapr/pkg/config/protocol"
 	"github.com/dapr/kit/logger"
+	pubsub_snssqs "github.com/liuxd6825/components-contrib/pubsub/aws/snssqs"
+	secretstore_env "github.com/liuxd6825/components-contrib/secretstores/local/env"
+	pubsub_loader "github.com/liuxd6825/dapr/pkg/components/pubsub"
+	secretstores_loader "github.com/liuxd6825/dapr/pkg/components/secretstores"
+	"github.com/liuxd6825/dapr/pkg/config/protocol"
 
-	"github.com/dapr/dapr/pkg/runtime"
-	dapr "github.com/dapr/go-sdk/client"
-	"github.com/dapr/go-sdk/service/common"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	dapr "github.com/liuxd6825/go-sdk/client"
+	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/app"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	"github.com/dapr/components-contrib/tests/certification/flow/simulate"
-	"github.com/dapr/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
 )
 
 const (

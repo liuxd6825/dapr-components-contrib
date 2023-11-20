@@ -22,10 +22,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	rediscomponent "github.com/dapr/components-contrib/internal/component/redis"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 const (

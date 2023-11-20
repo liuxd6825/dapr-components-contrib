@@ -25,11 +25,11 @@ import (
 	"github.com/google/uuid"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/dapr/components-contrib/configuration"
-	"github.com/dapr/components-contrib/configuration/redis/internal"
-	rediscomponent "github.com/dapr/components-contrib/internal/component/redis"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/configuration"
+	"github.com/liuxd6825/components-contrib/configuration/redis/internal"
+	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

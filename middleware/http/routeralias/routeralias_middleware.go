@@ -23,9 +23,9 @@ import (
 	"github.com/gorilla/mux"
 	"gopkg.in/yaml.v3"
 
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 type contextKey int

@@ -26,9 +26,9 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/container"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
-	mdutils "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

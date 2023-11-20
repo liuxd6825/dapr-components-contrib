@@ -7,8 +7,8 @@ import (
 
 	servicebus "github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus"
 
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 // GetPubSubHandlerFunc returns the handler function for pubsub messages.

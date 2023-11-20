@@ -29,11 +29,11 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/container"
 	"github.com/google/uuid"
 
-	"github.com/dapr/components-contrib/bindings"
-	storageinternal "github.com/dapr/components-contrib/internal/component/azure/blobstorage"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/bindings"
+	storageinternal "github.com/liuxd6825/components-contrib/internal/component/azure/blobstorage"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

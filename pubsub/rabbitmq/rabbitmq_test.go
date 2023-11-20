@@ -25,9 +25,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mdata "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	mdata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 func newBroker() *rabbitMQInMemoryBroker {

@@ -21,9 +21,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/secretstores"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/secretstores"
 )
 
 var _ secretstores.SecretStore = (*envSecretStore)(nil)

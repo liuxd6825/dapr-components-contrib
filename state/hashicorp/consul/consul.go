@@ -21,10 +21,10 @@ import (
 
 	"github.com/hashicorp/consul/api"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 // Consul is a state store implementation for HashiCorp Consul.

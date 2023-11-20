@@ -26,16 +26,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/bindings"
-	bindings_kitex "github.com/dapr/components-contrib/bindings/kitex"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	kitex_e2e "github.com/dapr/components-contrib/tests/e2e/bindings/kitex"
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
-	"github.com/dapr/dapr/pkg/runtime"
-	daprsdk "github.com/dapr/go-sdk/client"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	bindings_kitex "github.com/liuxd6825/components-contrib/bindings/kitex"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	kitex_e2e "github.com/liuxd6825/components-contrib/tests/e2e/bindings/kitex"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	daprsdk "github.com/liuxd6825/go-sdk/client"
 )
 
 const (

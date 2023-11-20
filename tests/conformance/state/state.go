@@ -28,12 +28,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 
-	"github.com/dapr/components-contrib/contenttype"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/tests/conformance/utils"
 	"github.com/dapr/kit/config"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/contenttype"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
 )
 
 type ValueType struct {

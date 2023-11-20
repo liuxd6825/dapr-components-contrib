@@ -27,11 +27,11 @@ import (
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	kubeclient "github.com/dapr/components-contrib/internal/authentication/kubernetes"
-	"github.com/dapr/components-contrib/metadata"
 	internals "github.com/dapr/kit/crypto"
 	"github.com/dapr/kit/logger"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	kubeclient "github.com/liuxd6825/components-contrib/internal/authentication/kubernetes"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

@@ -30,19 +30,19 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state/postgresql"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state/postgresql"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
 
-	state_postgres "github.com/dapr/components-contrib/internal/component/postgresql"
-	"github.com/dapr/components-contrib/state"
-	state_loader "github.com/dapr/dapr/pkg/components/state"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
-	"github.com/dapr/go-sdk/client"
 	"github.com/dapr/kit/logger"
+	state_postgres "github.com/liuxd6825/components-contrib/internal/component/postgresql"
+	"github.com/liuxd6825/components-contrib/state"
+	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
+	"github.com/liuxd6825/go-sdk/client"
 )
 
 const (

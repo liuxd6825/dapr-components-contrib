@@ -23,10 +23,10 @@ import (
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/nkeys"
 
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/retry"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 type jetstreamPubSub struct {

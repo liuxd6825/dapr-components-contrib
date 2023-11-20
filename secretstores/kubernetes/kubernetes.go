@@ -22,10 +22,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	kubeclient "github.com/dapr/components-contrib/internal/authentication/kubernetes"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/secretstores"
 	"github.com/dapr/kit/logger"
+	kubeclient "github.com/liuxd6825/components-contrib/internal/authentication/kubernetes"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/secretstores"
 )
 
 var _ secretstores.SecretStore = (*kubernetesSecretStore)(nil)

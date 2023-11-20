@@ -23,9 +23,9 @@ import (
 
 	"github.com/dapr/kit/logger"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/internal/component/kafka"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/internal/component/kafka"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

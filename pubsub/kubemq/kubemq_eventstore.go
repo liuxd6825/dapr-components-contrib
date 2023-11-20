@@ -9,8 +9,8 @@ import (
 
 	"github.com/kubemq-io/kubemq-go"
 
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 // interface used to allow unit testing.

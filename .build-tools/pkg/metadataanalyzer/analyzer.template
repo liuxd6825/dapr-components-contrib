@@ -9,10 +9,10 @@ import (
 	"gopkg.in/yaml.v3"
 
 	"github.com/dapr/kit/logger"
-	mdutils "github.com/dapr/components-contrib/metadata"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
 
 {{- range $fullpkg, $val := .Pkgs }}
-	{{index $val 0}} "{{print "github.com/dapr/components-contrib/" $fullpkg}}"
+	{{index $val 0}} "{{print "github.com/liuxd6825/components-contrib/" $fullpkg}}"
 {{- end}}
 )
 

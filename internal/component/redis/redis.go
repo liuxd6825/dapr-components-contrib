@@ -22,9 +22,9 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/dapr/components-contrib/configuration"
+	"github.com/liuxd6825/components-contrib/configuration"
 
-	"github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

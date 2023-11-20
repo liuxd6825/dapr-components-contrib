@@ -14,15 +14,15 @@ limitations under the License.
 package embedded
 
 import (
-	"github.com/dapr/dapr/pkg/runtime"
+	"github.com/liuxd6825/dapr/pkg/runtime"
 	"github.com/dapr/kit/logger"
 
 	// Name resolutions.
-	nrConsul "github.com/dapr/components-contrib/nameresolution/consul"
-	nrKubernetes "github.com/dapr/components-contrib/nameresolution/kubernetes"
-	nrMdns "github.com/dapr/components-contrib/nameresolution/mdns"
+	nrConsul "github.com/liuxd6825/components-contrib/nameresolution/consul"
+	nrKubernetes "github.com/liuxd6825/components-contrib/nameresolution/kubernetes"
+	nrMdns "github.com/liuxd6825/components-contrib/nameresolution/mdns"
 
-	nrLoader "github.com/dapr/dapr/pkg/components/nameresolution"
+	nrLoader "github.com/liuxd6825/dapr/pkg/components/nameresolution"
 )
 
 func CommonComponents(log logger.Logger) []Option {

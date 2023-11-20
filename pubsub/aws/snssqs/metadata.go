@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 )

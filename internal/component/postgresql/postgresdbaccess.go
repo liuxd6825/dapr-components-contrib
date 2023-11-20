@@ -27,12 +27,12 @@ import (
 	"github.com/jackc/pgx/v5/pgtype"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	internalsql "github.com/dapr/components-contrib/internal/component/sql"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/state/query"
-	stateutils "github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	internalsql "github.com/liuxd6825/components-contrib/internal/component/sql"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/state/query"
+	stateutils "github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // Interface that applies to *pgxpool.Pool.

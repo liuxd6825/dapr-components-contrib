@@ -23,8 +23,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"github.com/dapr/components-contrib/internal/component/postgresql"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/component/postgresql"
 )
 
 // Performs migrations for the database schema

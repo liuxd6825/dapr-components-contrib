@@ -50,11 +50,11 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/data/aztables"
 	jsoniter "github.com/json-iterator/go"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 const (

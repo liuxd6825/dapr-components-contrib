@@ -24,10 +24,10 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
 	"github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azsecrets"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/secretstores"
 	"github.com/dapr/kit/logger"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/secretstores"
 )
 
 // Keyvault secret store component metadata properties

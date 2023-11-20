@@ -24,9 +24,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // MySQL doesn't accept RFC3339 formatted time, rejects trailing 'Z' for UTC indicator.
@@ -159,7 +159,7 @@ func TestMysqlIntegration(t *testing.T) {
 		// verify timestamp
 		ts, ok := result[0].(map[string]any)["ts"].(string)
 		assert.True(t, ok)
-		// have to use custom layout to parse timestamp, see this: https://github.com/dapr/components-contrib/pull/615
+		// have to use custom layout to parse timestamp, see this: https://github.com/liuxd6825/components-contrib/pull/615
 		var tt time.Time
 		tt, err = time.Parse("2006-01-02T15:04:05Z", ts)
 		require.NoError(t, err)

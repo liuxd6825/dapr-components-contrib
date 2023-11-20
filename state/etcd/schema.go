@@ -21,9 +21,9 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pbv2 "github.com/dapr/components-contrib/internal/proto/state/etcd/v2"
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/components-contrib/state/utils"
+	pbv2 "github.com/liuxd6825/components-contrib/internal/proto/state/etcd/v2"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // schemaMarshaller is an interface for encoding and decoding values which are

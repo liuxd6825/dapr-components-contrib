@@ -31,7 +31,7 @@ import (
 	"github.com/tetratelabs/wazero"
 	"github.com/tetratelabs/wazero/sys"
 
-	"github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 type InitMetadata struct {

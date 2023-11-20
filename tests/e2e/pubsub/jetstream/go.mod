@@ -1,10 +1,10 @@
-module github.com/dapr/components-contrib/tests/e2e/pubsub/jetstream
+module github.com/liuxd6825/components-contrib/tests/e2e/pubsub/jetstream
 
 go 1.20
 
 require (
-	github.com/dapr/components-contrib v1.10.6-0.20230403162214-9ee9d56cb7ea
-	github.com/dapr/kit v0.12.1
+	github.com/liuxd6825/components-contrib v1.10.6-0.20230403162214-9ee9d56cb7ea
+	github.com/liuxd6825/kit v0.12.1
 )
 
 require (
@@ -32,4 +32,4 @@ require (
 	k8s.io/apimachinery v0.26.3 // indirect
 )
 
-replace github.com/dapr/components-contrib => ../../../../
+replace github.com/liuxd6825/components-contrib => ../../../../

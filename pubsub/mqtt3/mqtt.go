@@ -29,10 +29,10 @@ import (
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	"golang.org/x/exp/maps"
 
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 const (

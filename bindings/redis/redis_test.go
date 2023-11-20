@@ -22,10 +22,10 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings"
-	internalredis "github.com/dapr/components-contrib/internal/component/redis"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	internalredis "github.com/liuxd6825/components-contrib/internal/component/redis"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

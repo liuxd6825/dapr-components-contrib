@@ -12,9 +12,9 @@ import (
 
 	qs "github.com/kubemq-io/kubemq-go/queues_stream"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // interface used to allow unit testing.

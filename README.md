@@ -1,12 +1,12 @@
 # Components Contrib
 
-[![Build, Lint, Unit Test - complete matrix](https://github.com/dapr/components-contrib/actions/workflows/components-contrib-all.yml/badge.svg?branch=master&event=schedule)](https://github.com/dapr/components-contrib/actions/workflows/components-contrib-all.yml)
+[![Build, Lint, Unit Test - complete matrix](https://github.com/liuxd6825/components-contrib/actions/workflows/components-contrib-all.yml/badge.svg?branch=master&event=schedule)](https://github.com/liuxd6825/components-contrib/actions/workflows/components-contrib-all.yml)
 [![Discord](https://img.shields.io/discord/778680217417809931)](https://discord.com/channels/778680217417809931/781589820128493598)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/dapr/components-contrib/blob/master/LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/liuxd6825/components-contrib/blob/master/LICENSE)
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B162%2Fgithub.com%2Fdapr%2Fcomponents-contrib.svg?type=shield)](https://app.fossa.com/projects/custom%2B162%2Fgithub.com%2Fdapr%2Fcomponents-contrib?ref=badge_shield)
 
 The purpose of Components Contrib is to provide open, community-driven, reusable components for building distributed applications.
-These components are being used by the [Dapr](https://github.com/dapr/dapr) project, but are separate and decoupled from it.
+These components are being used by the [Dapr](https://github.com/liuxd6825/dapr) project, but are separate and decoupled from it.
 
 Using components developers can interact with bindings, state stores, messaging systems and more, without caring about the underlying implementation.
 
@@ -29,11 +29,11 @@ For documentation on how components are being used in Dapr in a language/platfor
 
 Thanks to everyone who has contributed!
 
-<a href="https://github.com/dapr/components-contrib/graphs/contributors">
+<a href="https://github.com/liuxd6825/components-contrib/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=dapr/components-contrib" />
 </a>
 
 
 ## Code of Conduct
 
-Please refer to our [Dapr Community Code of Conduct](https://github.com/dapr/community/blob/master/CODE-OF-CONDUCT.md)
+Please refer to our [Dapr Community Code of Conduct](https://github.com/liuxd6825/community/blob/master/CODE-OF-CONDUCT.md)

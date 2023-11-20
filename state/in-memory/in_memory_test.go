@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/require"
 	clocktesting "k8s.io/utils/clock/testing"
 
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 func TestReadAndWrite(t *testing.T) {

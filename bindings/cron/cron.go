@@ -24,10 +24,10 @@ import (
 
 	"k8s.io/utils/clock"
 
-	"github.com/dapr/components-contrib/bindings"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	cron "github.com/dapr/kit/cron"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 // Binding represents Cron input binding.

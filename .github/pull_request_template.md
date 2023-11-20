@@ -14,4 +14,4 @@ Please make sure you've completed the relevant tasks for this PR, out of the fol
 
 * [ ] Code compiles correctly
 * [ ] Created/updated tests
-* [ ] Extended the documentation / Created issue in the https://github.com/dapr/docs/ repo: dapr/docs#_[issue number]_
+* [ ] Extended the documentation / Created issue in the https://github.com/liuxd6825/docs/ repo: dapr/docs#_[issue number]_

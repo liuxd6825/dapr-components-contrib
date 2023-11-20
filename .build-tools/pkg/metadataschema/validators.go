@@ -20,7 +20,7 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	mdutils "github.com/dapr/components-contrib/metadata"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

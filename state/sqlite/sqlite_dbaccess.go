@@ -30,10 +30,10 @@ import (
 	// Blank import for the underlying SQLite Driver.
 	_ "modernc.org/sqlite"
 
-	internalsql "github.com/dapr/components-contrib/internal/component/sql"
-	"github.com/dapr/components-contrib/state"
-	stateutils "github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
+	internalsql "github.com/liuxd6825/components-contrib/internal/component/sql"
+	"github.com/liuxd6825/components-contrib/state"
+	stateutils "github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // DBAccess is a private interface which enables unit testing of SQLite.

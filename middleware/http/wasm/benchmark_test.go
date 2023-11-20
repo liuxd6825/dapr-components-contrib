@@ -21,10 +21,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/dapr/components-contrib/internal/httputils"
-	"github.com/dapr/components-contrib/metadata"
-	dapr "github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/httputils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	dapr "github.com/liuxd6825/components-contrib/middleware"
 )
 
 const parallel = 10

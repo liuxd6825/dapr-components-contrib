@@ -14,12 +14,12 @@ limitations under the License.
 package command_test
 
 import (
-	"github.com/dapr/components-contrib/bindings"
-	bindings_zeebe_command "github.com/dapr/components-contrib/bindings/zeebe/command"
-	bindings_zeebe_jobworker "github.com/dapr/components-contrib/bindings/zeebe/jobworker"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	bindings_zeebe_command "github.com/liuxd6825/components-contrib/bindings/zeebe/command"
+	bindings_zeebe_jobworker "github.com/liuxd6825/components-contrib/bindings/zeebe/jobworker"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
 )
 
 func componentRuntimeOptions() []embedded.Option {

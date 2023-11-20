@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/dapr/components-contrib/bindings"
-	rediscomponent "github.com/dapr/components-contrib/internal/component/redis"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	rediscomponent "github.com/liuxd6825/components-contrib/internal/component/redis"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // Redis is a redis output binding.

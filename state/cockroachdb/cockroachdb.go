@@ -17,9 +17,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dapr/components-contrib/internal/component/postgresql"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/component/postgresql"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 // New creates a new instance of CockroachDB state store.

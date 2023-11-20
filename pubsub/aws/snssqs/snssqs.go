@@ -35,10 +35,10 @@ import (
 
 	gonanoid "github.com/matoous/go-nanoid/v2"
 
-	awsAuth "github.com/dapr/components-contrib/internal/authentication/aws"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 type topicHandler struct {

@@ -28,28 +28,28 @@ import (
 
 	// Pub/Sub.
 
-	"github.com/dapr/components-contrib/bindings"
-	bindings_kafka "github.com/dapr/components-contrib/bindings/kafka"
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
-	"github.com/dapr/dapr/pkg/config/protocol"
+	"github.com/liuxd6825/components-contrib/bindings"
+	bindings_kafka "github.com/liuxd6825/components-contrib/bindings/kafka"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
+	"github.com/liuxd6825/dapr/pkg/config/protocol"
 
 	// Dapr runtime and Go-SDK
-	"github.com/dapr/dapr/pkg/runtime"
-	dapr "github.com/dapr/go-sdk/client"
-	"github.com/dapr/go-sdk/service/common"
 	"github.com/dapr/kit/logger"
 	kit_retry "github.com/dapr/kit/retry"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	dapr "github.com/liuxd6825/go-sdk/client"
+	"github.com/liuxd6825/go-sdk/service/common"
 
 	// Certification testing runnables
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/app"
-	"github.com/dapr/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/dapr/components-contrib/tests/certification/flow/network"
-	"github.com/dapr/components-contrib/tests/certification/flow/retry"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	"github.com/dapr/components-contrib/tests/certification/flow/simulate"
-	"github.com/dapr/components-contrib/tests/certification/flow/watcher"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/retry"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/simulate"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/watcher"
 )
 
 const (

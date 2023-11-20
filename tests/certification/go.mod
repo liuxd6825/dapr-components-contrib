@@ -1,4 +1,4 @@
-module github.com/dapr/components-contrib/tests/certification
+module github.com/liuxd6825/components-contrib/tests/certification
 
 go 1.20
 
@@ -16,10 +16,10 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.1
 	github.com/cloudwego/kitex v0.5.0
 	github.com/cloudwego/kitex-examples v0.1.1
-	github.com/dapr/components-contrib v1.12.0-rc.3
-	github.com/dapr/dapr v1.12.0-rc.5
-	github.com/dapr/go-sdk v1.8.0
-	github.com/dapr/kit v0.12.1
+	github.com/liuxd6825/components-contrib v1.12.0-rc.3
+	github.com/liuxd6825/dapr v1.12.0-rc.5
+	github.com/liuxd6825/go-sdk v1.8.0
+	github.com/liuxd6825/kit v0.12.1
 	github.com/eclipse/paho.mqtt.golang v1.4.3
 	github.com/go-chi/chi/v5 v5.0.10
 	github.com/go-redis/redis/v8 v8.11.5
@@ -313,4 +313,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/dapr/components-contrib => ../../
+replace github.com/liuxd6825/components-contrib => ../../

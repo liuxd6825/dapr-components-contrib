@@ -25,9 +25,9 @@ import (
 
 	r "github.com/dancannon/gorethink"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 // Binding represents RethinkDB change state input binding which fires handler with

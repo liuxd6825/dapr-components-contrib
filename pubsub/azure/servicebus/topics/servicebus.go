@@ -22,11 +22,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	impl "github.com/dapr/components-contrib/internal/component/azure/servicebus"
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	impl "github.com/liuxd6825/components-contrib/internal/component/azure/servicebus"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 const (

@@ -26,14 +26,14 @@ import (
 	hessian "github.com/apache/dubbo-go-hessian2"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/bindings/dubbo"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	bindings_loader "github.com/dapr/dapr/pkg/components/bindings"
-	"github.com/dapr/dapr/pkg/runtime"
-	daprsdk "github.com/dapr/go-sdk/client"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/bindings/dubbo"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	bindings_loader "github.com/liuxd6825/dapr/pkg/components/bindings"
+	"github.com/liuxd6825/dapr/pkg/runtime"
+	daprsdk "github.com/liuxd6825/go-sdk/client"
 	"github.com/dapr/kit/logger"
 )
 

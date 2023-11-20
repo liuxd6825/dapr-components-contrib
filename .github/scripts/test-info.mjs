@@ -831,7 +831,7 @@ function GenerateMatrix(testKind, enableCloudTests) {
             'nodejs-version': comp.nodeJsVersion || undefined,
             'mongodb-version': comp.mongoDbVersion || undefined,
             'source-pkg': comp.sourcePkg
-                .map((p) => 'github.com/dapr/components-contrib/' + p)
+                .map((p) => 'github.com/liuxd6825/components-contrib/' + p)
                 .join(','),
         })
     }

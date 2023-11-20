@@ -23,8 +23,8 @@ import (
 	gomock "github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 //go:generate mockgen -package zookeeper -source zk.go -destination zk_mock.go

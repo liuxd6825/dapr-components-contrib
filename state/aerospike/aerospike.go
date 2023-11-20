@@ -26,10 +26,10 @@ import (
 	"github.com/aerospike/aerospike-client-go/v6/types"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 type aerospikeMetadata struct {

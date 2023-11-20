@@ -37,19 +37,19 @@ import (
 	// Import the embed package.
 	_ "embed"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
-	bearerMw "github.com/dapr/components-contrib/middleware/http/bearer"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/app"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	httpMiddlewareLoader "github.com/dapr/dapr/pkg/components/middleware/http"
-	"github.com/dapr/dapr/pkg/config/protocol"
-	httpMiddleware "github.com/dapr/dapr/pkg/middleware/http"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
-	"github.com/dapr/go-sdk/service/common"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
+	bearerMw "github.com/liuxd6825/components-contrib/middleware/http/bearer"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/app"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	httpMiddlewareLoader "github.com/liuxd6825/dapr/pkg/components/middleware/http"
+	"github.com/liuxd6825/dapr/pkg/config/protocol"
+	httpMiddleware "github.com/liuxd6825/dapr/pkg/middleware/http"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
+	"github.com/liuxd6825/go-sdk/service/common"
 )
 
 const (

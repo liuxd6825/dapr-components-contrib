@@ -25,10 +25,10 @@ import (
 	"github.com/http-wasm/http-wasm-host-go/handler"
 	wasmnethttp "github.com/http-wasm/http-wasm-host-go/handler/nethttp"
 
-	"github.com/dapr/components-contrib/internal/wasm"
-	mdutils "github.com/dapr/components-contrib/metadata"
-	dapr "github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/wasm"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	dapr "github.com/liuxd6825/components-contrib/middleware"
 )
 
 type middleware struct {

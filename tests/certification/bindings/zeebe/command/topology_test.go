@@ -20,14 +20,14 @@ import (
 	"time"
 
 	"github.com/camunda/zeebe/clients/go/v8/pkg/pb"
-	bindings_zeebe_command "github.com/dapr/components-contrib/bindings/zeebe/command"
-	zeebe_test "github.com/dapr/components-contrib/tests/certification/bindings/zeebe"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/dapr/components-contrib/tests/certification/flow/retry"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
+	bindings_zeebe_command "github.com/liuxd6825/components-contrib/bindings/zeebe/command"
+	zeebe_test "github.com/liuxd6825/components-contrib/tests/certification/bindings/zeebe"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/retry"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
   - name: Dapr Community Repo
-    url: https://github.com/dapr/community
+    url: https://github.com/liuxd6825/community
     about: Please see our community docs here.
   - name: Dapr Discord Chat
     url: https://aka.ms/dapr-discord

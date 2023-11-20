@@ -21,12 +21,12 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/messaging/azeventhubs"
 
-	impl "github.com/dapr/components-contrib/internal/component/azure/eventhubs"
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	impl "github.com/liuxd6825/components-contrib/internal/component/azure/eventhubs"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 // AzureEventHubs allows sending/receiving Azure Event Hubs events.

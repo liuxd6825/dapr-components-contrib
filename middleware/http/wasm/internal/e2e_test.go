@@ -27,10 +27,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
-	"github.com/dapr/components-contrib/middleware/http/wasm"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
+	"github.com/liuxd6825/components-contrib/middleware/http/wasm"
 )
 
 var guestWasm map[string][]byte

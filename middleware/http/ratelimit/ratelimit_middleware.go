@@ -22,9 +22,9 @@ import (
 	tollbooth "github.com/didip/tollbooth/v7"
 	libstring "github.com/didip/tollbooth/v7/libstring"
 
-	contribMetadata "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 // Metadata is the ratelimit middleware config.

@@ -26,12 +26,12 @@ import (
 
 	clientv3 "go.etcd.io/etcd/client/v3"
 
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	stateutils "github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	stateutils "github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // Etcd is a state store implementation for Etcd.

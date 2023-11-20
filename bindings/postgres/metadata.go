@@ -14,8 +14,8 @@ limitations under the License.
 package postgres
 
 import (
-	pgauth "github.com/dapr/components-contrib/internal/authentication/postgresql"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
+	pgauth "github.com/liuxd6825/components-contrib/internal/authentication/postgresql"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 type psqlMetadata struct {

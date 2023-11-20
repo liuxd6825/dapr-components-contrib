@@ -31,9 +31,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mdata "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/pubsub"
 	"github.com/dapr/kit/logger"
+	mdata "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 type mqttMessage struct {
@@ -524,7 +524,7 @@ func Test_buildRegexForTopic(t *testing.T) {
 			},
 		},
 		{
-			// https://github.com/dapr/components-contrib/issues/1881#issuecomment-1191571216
+			// https://github.com/liuxd6825/components-contrib/issues/1881#issuecomment-1191571216
 			name:  "event/data/+/+/+/1/1",
 			args:  args{topicName: "event/data/+/+/+/1/1"},
 			regex: `^event/data/([^\/]*)/([^\/]*)/([^\/]*)/1/1$`,

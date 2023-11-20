@@ -19,18 +19,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dapr/components-contrib/state"
-	"github.com/dapr/go-sdk/client"
+	"github.com/liuxd6825/components-contrib/state"
+	"github.com/liuxd6825/go-sdk/client"
 
-	state_memcached "github.com/dapr/components-contrib/state/memcached"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/dapr/components-contrib/tests/certification/flow/network"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	state_loader "github.com/dapr/dapr/pkg/components/state"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
 	"github.com/dapr/kit/logger"
+	state_memcached "github.com/liuxd6825/components-contrib/state/memcached"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/network"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
 	"github.com/stretchr/testify/assert"
 )
 

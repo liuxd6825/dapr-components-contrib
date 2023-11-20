@@ -16,7 +16,7 @@ package lock
 import (
 	"context"
 
-	"github.com/dapr/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 type Store interface {

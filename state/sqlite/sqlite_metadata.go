@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 const (

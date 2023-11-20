@@ -25,8 +25,8 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/cast"
 
-	"github.com/dapr/components-contrib/internal/utils"
 	"github.com/dapr/kit/ptr"
+	"github.com/liuxd6825/components-contrib/internal/utils"
 )
 
 const (

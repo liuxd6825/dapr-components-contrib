@@ -22,9 +22,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/lock"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/lock"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const resourceID = "resource_xxx"

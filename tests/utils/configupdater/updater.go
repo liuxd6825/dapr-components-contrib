@@ -1,6 +1,6 @@
 package configupdater
 
-import "github.com/dapr/components-contrib/configuration"
+import "github.com/liuxd6825/components-contrib/configuration"
 
 type Updater interface {
 	Init(props map[string]string) error

@@ -30,18 +30,18 @@ import (
 	// Blank import for the underlying PostgreSQL driver.
 	_ "github.com/jackc/pgx/v5/stdlib"
 
-	"github.com/dapr/components-contrib/internal/component/postgresql"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	state_cockroach "github.com/dapr/components-contrib/state/cockroachdb"
-	"github.com/dapr/components-contrib/tests/certification/embedded"
-	"github.com/dapr/components-contrib/tests/certification/flow"
-	"github.com/dapr/components-contrib/tests/certification/flow/dockercompose"
-	"github.com/dapr/components-contrib/tests/certification/flow/sidecar"
-	state_loader "github.com/dapr/dapr/pkg/components/state"
-	dapr_testing "github.com/dapr/dapr/pkg/testing"
-	goclient "github.com/dapr/go-sdk/client"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/component/postgresql"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	state_cockroach "github.com/liuxd6825/components-contrib/state/cockroachdb"
+	"github.com/liuxd6825/components-contrib/tests/certification/embedded"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/dockercompose"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow/sidecar"
+	state_loader "github.com/liuxd6825/dapr/pkg/components/state"
+	dapr_testing "github.com/liuxd6825/dapr/pkg/testing"
+	goclient "github.com/liuxd6825/go-sdk/client"
 )
 
 const (

@@ -2,7 +2,7 @@
 
 This component lets you manipulate an incoming request or serve a response with custom logic compiled using the [htp-wasm](https://http-wasm.io/) Application Binary Interface (ABI). The `handle_request` function receives an incoming request and can manipulate it or serve a response as necessary.
 
-Please see the [documentation](https://github.com/dapr/docs/blob/v1.11/daprdocs/content/en/reference/components-reference/supported-middleware/middleware-wasm.md) for general configuration.
+Please see the [documentation](https://github.com/liuxd6825/docs/blob/v1.11/daprdocs/content/en/reference/components-reference/supported-middleware/middleware-wasm.md) for general configuration.
 
 ### Generating Wasm
 

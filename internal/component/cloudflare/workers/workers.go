@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	cfworkerscode "github.com/dapr/components-contrib/internal/component/cloudflare/workers/code"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
+	cfworkerscode "github.com/liuxd6825/components-contrib/internal/component/cloudflare/workers/code"
 )
 
 const (

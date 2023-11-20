@@ -28,9 +28,9 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 
-	mdutils "github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	mdutils "github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/middleware"
 )
 
 // Metadata is the oAuth clientcredentials middleware config.

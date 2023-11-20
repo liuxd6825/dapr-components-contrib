@@ -17,8 +17,8 @@ import (
 	"fmt"
 	"time"
 
-	pgauth "github.com/dapr/components-contrib/internal/authentication/postgresql"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
+	pgauth "github.com/liuxd6825/components-contrib/internal/authentication/postgresql"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 type metadata struct {

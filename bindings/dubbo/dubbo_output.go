@@ -26,9 +26,9 @@ import (
 	_ "dubbo.apache.org/dubbo-go/v3/protocol/dubbo"
 	dubboImpl "dubbo.apache.org/dubbo-go/v3/protocol/dubbo/impl"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 type DubboOutputBinding struct {

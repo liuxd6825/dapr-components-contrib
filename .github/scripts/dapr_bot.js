@@ -29,17 +29,17 @@ const owners = [
 const docsIssueBodyTpl = (
     issueNumber
 ) => `This issue was automatically created by \
-[Dapr Bot](https://github.com/dapr/dapr/blob/master/.github/workflows/dapr-bot.yml) because a \"documentation required\" label \
+[Dapr Bot](https://github.com/liuxd6825/dapr/blob/master/.github/workflows/dapr-bot.yml) because a \"documentation required\" label \
 was added to dapr/components-contrib#${issueNumber}. \n\n\
 TODO: Add more details as per [this template](.github/ISSUE_TEMPLATE/new-content-needed.md).`
 
 const newComponentBodyTpl = (
     issueNumber
 ) => `This issue was automatically created by \
-[Dapr Bot](https://github.com/dapr/dapr/blob/master/.github/workflows/dapr-bot.yml) because a \"new component\" label \
+[Dapr Bot](https://github.com/liuxd6825/dapr/blob/master/.github/workflows/dapr-bot.yml) because a \"new component\" label \
 was added to dapr/components-contrib#${issueNumber}. \n\n\
 
-Please register the component in [cmd/daprd/components](https://github.com/dapr/dapr/tree/master/cmd/daprd/components), \
+Please register the component in [cmd/daprd/components](https://github.com/liuxd6825/dapr/tree/master/cmd/daprd/components), \
 similar to the ones in the folder (one file per component).`
 
 module.exports = async ({ github, context }) => {

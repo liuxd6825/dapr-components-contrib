@@ -28,11 +28,11 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"golang.org/x/exp/slices"
 
-	"github.com/dapr/components-contrib/internal/component/cloudflare/workers"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
-	stateutils "github.com/dapr/components-contrib/state/utils"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/component/cloudflare/workers"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
+	stateutils "github.com/liuxd6825/components-contrib/state/utils"
 )
 
 // Link to the documentation for the component

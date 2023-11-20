@@ -25,10 +25,10 @@ import (
 	"github.com/http-wasm/http-wasm-host-go/api"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/internal/httputils"
-	"github.com/dapr/components-contrib/metadata"
-	dapr "github.com/dapr/components-contrib/middleware"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/httputils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	dapr "github.com/liuxd6825/components-contrib/middleware"
 )
 
 //go:embed internal/testdata/rewrite.wasm

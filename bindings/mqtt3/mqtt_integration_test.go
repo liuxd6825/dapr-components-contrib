@@ -25,9 +25,9 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/bindings"
-	mdata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	mdata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

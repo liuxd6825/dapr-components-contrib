@@ -18,8 +18,8 @@ import (
 
 	"github.com/cenkalti/backoff/v4"
 
-	"github.com/dapr/components-contrib/tests/certification/flow"
 	"github.com/dapr/kit/retry"
+	"github.com/liuxd6825/components-contrib/tests/certification/flow"
 )
 
 func Do(frequency time.Duration, maxRetries uint64, runnable flow.Runnable) flow.Runnable {

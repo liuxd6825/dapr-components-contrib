@@ -24,13 +24,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/internal/utils"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/internal/utils"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
-// go test -timeout 30s github.com/dapr/components-contrib/state/rethinkdb -count 1 -run ^TestGetRethinkDBMetadata$.
+// go test -timeout 30s github.com/liuxd6825/components-contrib/state/rethinkdb -count 1 -run ^TestGetRethinkDBMetadata$.
 func TestGetRethinkDBMetadata(t *testing.T) {
 	testLogger := logger.NewLogger("test")
 	t.Run("With required connect configuration", func(t *testing.T) {

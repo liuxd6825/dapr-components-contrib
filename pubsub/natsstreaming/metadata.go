@@ -16,7 +16,7 @@ package natsstreaming
 import (
 	"time"
 
-	"github.com/dapr/components-contrib/pubsub"
+	"github.com/liuxd6825/components-contrib/pubsub"
 )
 
 type natsMetadata struct {

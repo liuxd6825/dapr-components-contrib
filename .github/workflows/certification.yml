@@ -133,7 +133,7 @@ jobs:
         # Certification test and source path
         TEST_COMPONENT=$(echo "${{ matrix.component }}" | sed -E 's/\./\//g')
         echo "TEST_PATH=tests/certification/${TEST_COMPONENT}" >> $GITHUB_ENV
-        SOURCE_PATH="github.com/dapr/components-contrib/${TEST_COMPONENT}"
+        SOURCE_PATH="github.com/liuxd6825/components-contrib/${TEST_COMPONENT}"
         echo "SOURCE_PATH=$SOURCE_PATH" >> $GITHUB_ENV
         # converts slashes to dots in this string, so that it doesn't consider them sub-folders
         SOURCE_PATH_LINEAR=$(echo "$SOURCE_PATH" |sed 's#/#\.#g')

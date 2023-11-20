@@ -24,10 +24,10 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/dapr/components-contrib/bindings"
-	"github.com/dapr/components-contrib/internal/component/cloudflare/workers"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/bindings"
+	"github.com/liuxd6825/components-contrib/internal/component/cloudflare/workers"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 // Link to the documentation for the component

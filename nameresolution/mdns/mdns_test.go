@@ -24,9 +24,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/metadata"
-	nr "github.com/dapr/components-contrib/nameresolution"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	nr "github.com/liuxd6825/components-contrib/nameresolution"
 )
 
 const (

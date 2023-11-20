@@ -25,10 +25,10 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/eventhub/armeventhub"
 
-	azauth "github.com/dapr/components-contrib/internal/authentication/azure"
 	"github.com/dapr/kit/logger"
 	"github.com/dapr/kit/ptr"
 	"github.com/dapr/kit/retry"
+	azauth "github.com/liuxd6825/components-contrib/internal/authentication/azure"
 )
 
 const (

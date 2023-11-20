@@ -23,10 +23,10 @@ import (
 
 	"github.com/lestrrat-go/jwx/v2/jwk"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	contribMetadata "github.com/dapr/components-contrib/metadata"
 	"github.com/dapr/kit/jwkscache"
 	"github.com/dapr/kit/logger"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	contribMetadata "github.com/liuxd6825/components-contrib/metadata"
 )
 
 type jwksCrypto struct {

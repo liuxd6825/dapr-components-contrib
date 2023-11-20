@@ -22,10 +22,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/ssm"
 	"github.com/aws/aws-sdk-go/service/ssm/ssmiface"
 
-	awsAuth "github.com/dapr/components-contrib/internal/authentication/aws"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/secretstores"
 	"github.com/dapr/kit/logger"
+	awsAuth "github.com/liuxd6825/components-contrib/internal/authentication/aws"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/secretstores"
 )
 
 // Constant literals.

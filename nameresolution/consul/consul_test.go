@@ -22,9 +22,9 @@ import (
 	consul "github.com/hashicorp/consul/api"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/dapr/components-contrib/metadata"
-	nr "github.com/dapr/components-contrib/nameresolution"
 	"github.com/dapr/kit/logger"
+	"github.com/liuxd6825/components-contrib/metadata"
+	nr "github.com/liuxd6825/components-contrib/nameresolution"
 )
 
 type mockClient struct {

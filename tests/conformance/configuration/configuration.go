@@ -25,11 +25,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/dapr/components-contrib/configuration"
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/tests/conformance/utils"
-	"github.com/dapr/components-contrib/tests/utils/configupdater"
-	postgres_updater "github.com/dapr/components-contrib/tests/utils/configupdater/postgres"
+	"github.com/liuxd6825/components-contrib/configuration"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/tests/conformance/utils"
+	"github.com/liuxd6825/components-contrib/tests/utils/configupdater"
+	postgres_updater "github.com/liuxd6825/components-contrib/tests/utils/configupdater/postgres"
 )
 
 const (

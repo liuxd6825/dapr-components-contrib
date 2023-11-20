@@ -17,8 +17,8 @@ import (
 	"errors"
 	"time"
 
-	contribCrypto "github.com/dapr/components-contrib/crypto"
-	"github.com/dapr/components-contrib/metadata"
+	contribCrypto "github.com/liuxd6825/components-contrib/crypto"
+	"github.com/liuxd6825/components-contrib/metadata"
 )
 
 const (

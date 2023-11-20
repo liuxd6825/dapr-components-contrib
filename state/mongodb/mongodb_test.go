@@ -21,8 +21,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.mongodb.org/mongo-driver/bson"
 
-	"github.com/dapr/components-contrib/metadata"
-	"github.com/dapr/components-contrib/state"
+	"github.com/liuxd6825/components-contrib/metadata"
+	"github.com/liuxd6825/components-contrib/state"
 )
 
 func TestGetMongoDBMetadata(t *testing.T) {
