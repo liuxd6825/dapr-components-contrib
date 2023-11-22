@@ -631,6 +631,7 @@ func (s *EventStorage) publishMessage(ctx context.Context, event *model.Event, i
 			EventId:     event.EventId,
 			CreateTime:  time.Now(),
 			Event:       event,
+			PubsubName:  event.PubsubName,
 		}
 		if err := s.messageService.Create(ctx, message); err != nil {
 			return err

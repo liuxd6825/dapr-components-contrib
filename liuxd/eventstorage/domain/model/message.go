@@ -11,6 +11,7 @@ type Message struct {
 	EventId     string    `bson:"event_id" json:"event_id"`
 	CreateTime  time.Time `bson:"create_time" json:"create_time"`
 	Event       *Event    `bson:"event" json:"event"  gorm:"type:text;serializer:json"`
+	PubsubName  string    `bson:"pubsub_name" json:"pubsubName" gorm:"pubsub_name"`
 }
 
 func (a *Message) GetId() string {
@@ -23,4 +24,8 @@ func (a *Message) SetId(v string) {
 
 func (a *Message) GetTenantId() string {
 	return a.TenantId
+}
+
+func (a *Message) GetPubsubName() string {
+	return a.PubsubName
 }
