@@ -19,7 +19,7 @@ require (
 	github.com/liuxd6825/dapr-components-contrib v1.12.0-rc.3
 	github.com/liuxd6825/dapr v1.12.0-rc.5
 	github.com/liuxd6825/go-sdk v1.8.0
-	github.com/liuxd6825/kit v0.12.1
+	github.com/dapr/kit v0.12.1
 	github.com/eclipse/paho.mqtt.golang v1.4.3
 	github.com/go-chi/chi/v5 v5.0.10
 	github.com/go-redis/redis/v8 v8.11.5

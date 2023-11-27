@@ -352,7 +352,7 @@ func (r *rabbitMQ) Subscribe(ctx context.Context, req pubsub.SubscribeRequest, h
 	// Wait for the ack for 1 minute or return an error
 	select {
 	case <-time.After(time.Minute):
-		return fmt.Errorf("failed to subscribe to %s", queueName)
+		return fmt.Errorf("failed to subscribe to %s timeout 60s", queueName)
 	case failed := <-ackCh:
 		if failed {
 			return fmt.Errorf("error not retriable for %s", queueName)
@@ -648,7 +648,6 @@ func (r *rabbitMQ) ensureExchangeDeclared(channel rabbitMQChannelBroker, exchang
 		err := channel.ExchangeDeclare(exchange, exchangeKind, durable, autoDelete, false, false, nil)
 		if err != nil {
 			r.logger.Errorf("%s ensureExchangeDeclared: channel.ExchangeDeclare failed: %v", logMessagePrefix, err)
-
 			return err
 		}
 
