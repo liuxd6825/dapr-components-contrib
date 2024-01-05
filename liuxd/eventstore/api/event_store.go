@@ -643,6 +643,7 @@ func (s *EventStore) publishMessage(ctx context.Context, event *model.Event, isR
 
 	contentType := "json"
 	publishData := dto.PublishData{
+		TenantId:       tenantId,
 		EventId:        event.EventId,
 		EventData:      event.EventData,
 		EventVersion:   event.EventVersion,
