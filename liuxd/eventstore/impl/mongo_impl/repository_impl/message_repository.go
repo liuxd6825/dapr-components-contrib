@@ -42,6 +42,13 @@ func (m *messageRepository) DeleteByAggregateId(ctx context.Context, tenantId, a
 	}
 	return m.dao.deleteByFilter(ctx, tenantId, filter, msgOptions)
 }
+func (m *messageRepository) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	filter := bson.M{
+		TenantIdField:      tenantId,
+		AggregateTypeField: aggregateType,
+	}
+	return m.dao.deleteByFilter(ctx, tenantId, filter, msgOptions)
+}
 
 func (m *messageRepository) Update(ctx context.Context, v *model.Message) error {
 	return m.dao.Update(ctx, v, msgOptions)

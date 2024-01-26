@@ -11,6 +11,7 @@ type SnapshotService interface {
 	Create(ctx context.Context, snapshot *model.Snapshot) error
 	Update(ctx context.Context, snapshot *model.Snapshot) error
 	DeleteByAggregateId(ctx context.Context, tenantId string, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error
 	FindByAggregateId(ctx context.Context, tenantId string, aggregateId string) ([]*model.Snapshot, bool, error)
 	FindByMaxSequenceNumber(ctx context.Context, tenantId string, aggregateId string, aggregateType string) (*model.Snapshot, bool, error)
 }
@@ -33,6 +34,10 @@ func (s *snapshotService) Create(ctx context.Context, snapshot *model.Snapshot) 
 
 func (s *snapshotService) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
 	return s.repos.DeleteByAggregateId(ctx, tenantId, aggregateId)
+}
+
+func (s *snapshotService) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	return s.repos.DeleteByAggregateType(ctx, tenantId, aggregateType)
 }
 
 func (s *snapshotService) Update(ctx context.Context, snapshot *model.Snapshot) error {

@@ -1,5 +1,7 @@
 package dto
 
+import "github.com/liuxd6825/dapr-components-contrib/liuxd/eventstore/domain/model"
+
 type LoadEventRequest struct {
 	TenantId      string `json:"tenantId"`
 	AggregateId   string `json:"aggregateId"`
@@ -16,16 +18,16 @@ type LoadResponse struct {
 }
 
 type LoadResponseSnapshotDto struct {
-	AggregateData    map[string]interface{} `json:"aggregateData"`
-	AggregateVersion string                 `json:"aggregateVersion"`
-	SequenceNumber   uint64                 `json:"sequenceNumber"`
-	Metadata         map[string]string      `json:"metadata"`
+	AggregateData    map[string]any `json:"aggregateData"`
+	AggregateVersion string         `json:"aggregateVersion"`
+	SequenceNumber   uint64         `json:"sequenceNumber"`
+	Metadata         model.Metadata `json:"metadata"`
 }
 
 type LoadResponseEventDto struct {
-	EventId        string                 `json:"eventId"`
-	EventData      map[string]interface{} `json:"eventData"`
-	EventType      string                 `json:"eventType"`
-	EventVersion   string                 `json:"eventRevision"`
-	SequenceNumber uint64                 `json:"sequenceNumber"`
+	EventId        string         `json:"eventId"`
+	EventData      map[string]any `json:"eventData"`
+	EventType      string         `json:"eventType"`
+	EventVersion   string         `json:"eventRevision"`
+	SequenceNumber uint64         `json:"sequenceNumber"`
 }

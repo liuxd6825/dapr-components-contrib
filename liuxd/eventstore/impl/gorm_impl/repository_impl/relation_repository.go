@@ -16,6 +16,7 @@ type relationRepository struct {
 	dao *dao[*model.Relation]
 }
 
+
 func NewRelationRepository(db *gorm.DB) repository.RelationRepository {
 	_ = db.AutoMigrate(&model.Relation{})
 	res := &relationRepository{
@@ -40,8 +41,13 @@ func (r *relationRepository) DeleteById(ctx context.Context, tenantId string, id
 }
 
 func (r *relationRepository) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
-	where := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
-	return r.dao.deleteByFilter(ctx, tenantId, where)
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
+	return r.dao.deleteByFilter(ctx, tenantId, filter)
+}
+
+func (r *relationRepository) DeleteByAggregateType(ctx context.Context, tenantId string, aggregateType string) error {
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_type="%v"`, tenantId, aggregateType)
+	return r.dao.deleteByFilter(ctx, tenantId, filter)
 }
 
 func (r *relationRepository) Update(ctx context.Context, tenantId string, v *model.Relation) error {

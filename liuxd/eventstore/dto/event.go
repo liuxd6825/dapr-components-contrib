@@ -1,6 +1,7 @@
 package dto
 
 import (
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstore/domain/model"
 	"time"
 )
 
@@ -23,7 +24,7 @@ type Event struct {
 
 type EventDto struct {
 	ApplyType    string                 `json:"applyType"`
-	Metadata     map[string]string      `json:"metadata"`
+	Metadata     model.Metadata         `json:"metadata"`
 	CommandId    string                 `json:"commandId"`
 	EventId      string                 `json:"eventId"`
 	EventData    map[string]interface{} `json:"eventData"`

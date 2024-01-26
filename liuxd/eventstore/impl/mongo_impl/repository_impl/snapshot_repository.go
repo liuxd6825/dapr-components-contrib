@@ -50,6 +50,14 @@ func (r *snapshotRepository) FindByAggregateId(ctx context.Context, tenantId str
 	return r.dao.findList(ctx, tenantId, filter, nil)
 }
 
+func (r *snapshotRepository) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	filter := bson.M{
+		TenantIdField:      tenantId,
+		AggregateTypeField: aggregateType,
+	}
+	return r.dao.deleteByFilter(ctx, tenantId, filter, msgOptions)
+}
+
 func (r *snapshotRepository) FindByMaxSequenceNumber(ctx context.Context, tenantId string, aggregateId string, aggregateType string) (*model.Snapshot, bool, error) {
 	filter := bson.M{
 		TenantIdField:      tenantId,

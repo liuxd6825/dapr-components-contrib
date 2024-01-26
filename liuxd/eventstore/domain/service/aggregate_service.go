@@ -11,6 +11,7 @@ type AggregateService interface {
 	CreateMany(ctx context.Context, tenantId string, list []*model.Aggregate) error
 	UpdateSessionStatus(ctx context.Context, tenantId, sessionId string, status model.SessionStatus) error
 	DeleteById(ctx context.Context, tenantId, aggregateId string) error
+	DeleteByType(ctx context.Context, tenantId, aggregateType string) error
 	DeleteBySessionId(ctx context.Context, tenantId, sessionId string) error
 	SetDeleted(ctx context.Context, tenantId, aggregateId string) (*model.Aggregate, bool, error)
 	DeleteAndNextSequenceNumber(ctx context.Context, tenantId, aggregateId, aggregateType string) (*model.Aggregate, bool, error)
@@ -40,6 +41,10 @@ func (c *aggregateService) DeleteBySessionId(ctx context.Context, tenantId, sess
 
 func (c *aggregateService) DeleteById(ctx context.Context, tenantId, aggregateId string) error {
 	return c.repos.DeleteByAggregateId(ctx, tenantId, aggregateId)
+}
+
+func (c *aggregateService) DeleteByType(ctx context.Context, tenantId, aggregateType string) error {
+	return c.repos.DeleteByAggregateType(ctx, tenantId, aggregateType)
 }
 
 func (c *aggregateService) Destroy(ctx context.Context, tenantId, aggregateId string) error {

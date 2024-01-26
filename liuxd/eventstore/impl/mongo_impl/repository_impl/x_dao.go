@@ -147,7 +147,7 @@ func (d *dao[T]) deleteByFilter(ctx context.Context, tenantId string, filter int
 	opt := NewOptions().SetDbId(tenantId).Merge(opts...)
 	_, err := d.getCollection(opt.GetDbId()).DeleteMany(ctx, filter)
 	if err != nil {
-		if err == mongo.ErrNoDocuments {
+		if errors.Is(err, mongo.ErrNoDocuments) {
 			return nil
 		}
 		return err
@@ -212,7 +212,7 @@ func (d *dao[T]) findOneAndUpdate(ctx context.Context, tenantId string, filterDa
 	var null T
 	result := d.getCollection(tenantId).FindOneAndUpdate(ctx, filterData, updateData)
 	err := result.Err()
-	if err == mongo.ErrNoDocuments {
+	if errors.Is(err, mongo.ErrNoDocuments) {
 		return null, false, nil
 	} else if err != nil {
 		return null, false, err
@@ -231,7 +231,7 @@ func (d *dao[T]) findOne(ctx context.Context, tenantId string, filter interface{
 	dbId, findOpts := netFindOneOptions(tenantId, opts...)
 	err := d.getCollection(dbId).FindOne(ctx, filter, findOpts).Decode(&res)
 	if err != nil {
-		if err == mongo.ErrNoDocuments {
+		if errors.Is(err, mongo.ErrNoDocuments) {
 			return null, false, nil
 		}
 		return null, false, err
@@ -292,7 +292,10 @@ func (d *dao[T]) findPaging(ctx context.Context, query dto.FindPagingQuery, opts
 }
 
 func (d *dao[T]) getCollection(dbId string) *mongo.Collection {
-	collectionName := fmt.Sprintf("%v_%v", dbId, d.collName)
+	if dbId != MessageDbId {
+		dbId = "test"
+	}
+	collectionName := fmt.Sprintf("%s_%s", dbId, d.collName)
 	value, ok := collections.Get(collectionName)
 	if !ok {
 		value = d.mongodb.NewCollection(collectionName)
@@ -381,7 +384,7 @@ func (d *dao[T]) getSort(sort string) (map[string]interface{}, error) {
 }
 
 func IsErrorMongoNoDocuments(err error) bool {
-	if err == mongo.ErrNoDocuments {
+	if errors.Is(err, mongo.ErrNoDocuments) {
 		return true
 	}
 	return false

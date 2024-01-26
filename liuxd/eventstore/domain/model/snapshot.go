@@ -10,7 +10,7 @@ type Snapshot struct {
 	AggregateData    map[string]interface{} `bson:"aggregate_data" json:"aggregate_data"  gorm:"type:text;serializer:json"`
 	AggregateVersion string                 `bson:"aggregate_version" json:"aggregate_version"`
 	SequenceNumber   uint64                 `bson:"sequence_number" json:"sequence_number"`
-	Metadata         map[string]string      `bson:"metadata" json:"metadata"  gorm:"type:text;serializer:json"`
+	Metadata         Metadata               `bson:"metadata" json:"metadata"  gorm:"type:text;serializer:json"`
 	TimeStamp        primitive.DateTime     `bson:"time_stamp" json:"time_stamp"`
 }
 

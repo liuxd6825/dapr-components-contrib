@@ -11,6 +11,7 @@ type EventRepository interface {
 	CreateMany(ctx context.Context, tenantId string, list []*model.Event) error
 	DeleteById(ctx context.Context, tenantId string, id string) error
 	DeleteByAggregateId(ctx context.Context, tenantId string, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId string, aggregateType string) error
 	DeleteBySessionId(ctx context.Context, tenantId string, sessionId string) error
 	Update(ctx context.Context, tenantId string, v *model.Event) error
 	UpdateSessionStatus(ctx context.Context, tenantId string, sessionId string, status model.SessionStatus) error

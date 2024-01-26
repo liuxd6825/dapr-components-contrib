@@ -10,6 +10,7 @@ type AggregateRepository interface {
 	CreateMany(ctx context.Context, tenantId string, list []*model.Aggregate) error
 	DeleteById(ctx context.Context, tenantId string, id string) error
 	DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error
 	DeleteBySessionId(ctx context.Context, tenantId, sessionId string) error
 	Update(ctx context.Context, v *model.Aggregate) error
 	UpdateSessionStatus(ctx context.Context, tenantId, sessionId string, status model.SessionStatus) error

@@ -34,6 +34,8 @@ type EventStore struct {
 const DataKey = "dataKey="
 const DataKeyLen = len(DataKey)
 
+var JsonContentType = "json"
+
 func NewEventStore(log logger.Logger) eventstore.EventStore {
 	return &EventStore{
 		log: log,
@@ -337,21 +339,40 @@ func (s *EventStore) SaveSnapshot(ctx context.Context, req *dto.SaveSnapshotRequ
 // @return error
 func (s *EventStore) DeleteAggregate(ctx context.Context, req *dto.DeleteAggregateRequest) (*dto.DeleteAggregateResponse, error) {
 	_, err := s.doSession(ctx, req.TenantId, func(ctx context.Context) (any, error) {
-		if err := s.aggregateService.DeleteById(ctx, req.TenantId, req.AggregateId); err != nil {
-			return nil, err
+		if req.AggregateId != "" {
+			if err := s.aggregateService.DeleteById(ctx, req.TenantId, req.AggregateId); err != nil {
+				return nil, err
+			}
+			if err := s.eventService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
+				return nil, err
+			}
+			if err := s.relationService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
+				return nil, err
+			}
+			if err := s.messageService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
+				return nil, err
+			}
+			if err := s.snapshotService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
+				return nil, err
+			}
+		} else {
+			if err := s.aggregateService.DeleteByType(ctx, req.TenantId, req.AggregateType); err != nil {
+				return nil, err
+			}
+			if err := s.eventService.DeleteByAggregateType(ctx, req.TenantId, req.AggregateType); err != nil {
+				return nil, err
+			}
+			if err := s.relationService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateType); err != nil {
+				return nil, err
+			}
+			if err := s.messageService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateType); err != nil {
+				return nil, err
+			}
+			if err := s.snapshotService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateType); err != nil {
+				return nil, err
+			}
 		}
-		if err := s.eventService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
-			return nil, err
-		}
-		if err := s.relationService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
-			return nil, err
-		}
-		if err := s.messageService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
-			return nil, err
-		}
-		if err := s.snapshotService.DeleteByAggregateId(ctx, req.TenantId, req.AggregateId); err != nil {
-			return nil, err
-		}
+
 		return nil, nil
 	})
 	return &dto.DeleteAggregateResponse{}, err
@@ -641,7 +662,6 @@ func (s *EventStore) publishMessage(ctx context.Context, event *model.Event, isR
 		}
 	}
 
-	contentType := "json"
 	publishData := dto.PublishData{
 		TenantId:       tenantId,
 		EventId:        event.EventId,
@@ -649,6 +669,7 @@ func (s *EventStore) publishMessage(ctx context.Context, event *model.Event, isR
 		EventVersion:   event.EventVersion,
 		EventType:      event.EventType,
 		SequenceNumber: event.SequenceNumber,
+		Metadata:       event.Metadata,
 	}
 	bytes, err := json.Marshal(publishData)
 	if err != nil {
@@ -657,8 +678,8 @@ func (s *EventStore) publishMessage(ctx context.Context, event *model.Event, isR
 	pubData := &pubsub.PublishRequest{
 		PubsubName:  event.PubsubName,
 		Topic:       event.Topic,
-		Metadata:    event.Metadata,
-		ContentType: &contentType,
+		Metadata:    make(map[string]string),
+		ContentType: &JsonContentType,
 		Data:        bytes,
 	}
 

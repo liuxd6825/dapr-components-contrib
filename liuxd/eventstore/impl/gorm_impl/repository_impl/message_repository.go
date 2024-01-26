@@ -40,9 +40,16 @@ func (m *messageRepository) DeleteById(ctx context.Context, tenantId string, id 
 }
 
 func (m *messageRepository) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
-	where := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
-	return m.dao.deleteByFilter(ctx, tenantId, where)
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
+	return m.dao.deleteByFilter(ctx, tenantId, filter)
 }
+
+
+func (m *messageRepository) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_type="%v"`, tenantId, aggregateType)
+	return m.dao.deleteByFilter(ctx, tenantId, filter)
+}
+
 
 func (m *messageRepository) Update(ctx context.Context, v *model.Message) error {
 	return m.dao.Update(ctx, v, msgOptions)

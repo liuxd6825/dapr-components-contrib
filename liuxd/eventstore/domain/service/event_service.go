@@ -15,6 +15,7 @@ type EventService interface {
 	Update(ctx context.Context, event *model.Event) error
 	UpdateSessionStatus(ctx context.Context, tenantId string, sessionId string, status model.SessionStatus) error
 	DeleteByAggregateId(ctx context.Context, tenantId string, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId string, aggregateType string) error
 	DeleteEventBySessionId(ctx context.Context, tenantId string, sessionId string) error
 	FindById(ctx context.Context, tenantId string, id string) (*model.Event, bool, error)
 	FindBySessionIdAndStatus(ctx context.Context, tenantId string, sessionId string, status model.SessionStatus) ([]*model.Event, bool, error)
@@ -69,6 +70,10 @@ func (s *eventService) Create(ctx context.Context, event *model.Event) error {
 
 func (s *eventService) DeleteByAggregateId(ctx context.Context, tenantId string, aggregateId string) error {
 	return s.repos.DeleteByAggregateId(ctx, tenantId, aggregateId)
+}
+
+func (s *eventService) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	return s.repos.DeleteByAggregateType(ctx, tenantId, aggregateType)
 }
 
 func (s *eventService) FindById(ctx context.Context, tenantId string, id string) (*model.Event, bool, error) {

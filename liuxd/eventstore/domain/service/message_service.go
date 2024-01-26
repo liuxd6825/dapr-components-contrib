@@ -10,6 +10,7 @@ type MessageService interface {
 	Create(ctx context.Context, msg *model.Message) error
 	Delete(ctx context.Context, tenantId, id string) error
 	DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error
 	FindAll(ctx context.Context, limit *int64) ([]*model.Message, bool, error)
 }
 
@@ -34,6 +35,10 @@ func (m *messageService) Delete(ctx context.Context, tenantId, id string) error 
 
 func (m *messageService) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
 	return m.repos.DeleteByAggregateId(ctx, tenantId, aggregateId)
+}
+
+func (c *messageService) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	return c.repos.DeleteByAggregateType(ctx, tenantId, aggregateType)
 }
 
 func (m *messageService) FindAll(ctx context.Context, limit *int64) ([]*model.Message, bool, error) {

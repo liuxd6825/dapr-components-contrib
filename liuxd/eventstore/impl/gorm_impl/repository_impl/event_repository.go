@@ -40,6 +40,13 @@ func (r *eventRepository) DeleteByAggregateId(ctx context.Context, tenantId, agg
 	return r.dao.deleteByFilter(ctx, tenantId, where)
 }
 
+
+func (r *eventRepository) DeleteByAggregateType(ctx context.Context, tenantId string, aggregateType string) error {
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_type="%v"`, tenantId, aggregateType)
+	return r.dao.deleteByFilter(ctx, tenantId, filter)
+}
+
+
 func (r eventRepository) Update(ctx context.Context, tenantId string, v *model.Event) error {
 	return r.dao.Update(ctx, v)
 }

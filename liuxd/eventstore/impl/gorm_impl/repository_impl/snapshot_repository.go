@@ -12,6 +12,7 @@ type snapshotRepository struct {
 	dao *dao[*model.Snapshot]
 }
 
+
 func NewSnapshotRepository(db *gorm.DB) repository.SnapshotRepository {
 	_ = db.AutoMigrate(&model.Snapshot{})
 	return &snapshotRepository{
@@ -30,9 +31,14 @@ func (r *snapshotRepository) DeleteById(ctx context.Context, tenantId string, id
 	return r.dao.DeleteById(ctx, tenantId, id)
 }
 
+func (r *snapshotRepository) DeleteByAggregateType(ctx context.Context, tenantId string, aggregateType string) error {
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_type="%v"`, tenantId, aggregateType)
+	return r.dao.deleteByFilter(ctx, tenantId, filter)
+}
+
 func (r *snapshotRepository) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
-	where := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
-	return r.dao.deleteByFilter(ctx, tenantId, where)
+	filter := fmt.Sprintf(`tenant_id="%v" and aggregate_id="%v"`, tenantId, aggregateId)
+	return r.dao.deleteByFilter(ctx, tenantId, filter)
 }
 
 func (r *snapshotRepository) Update(ctx context.Context, tenantId string, v *model.Snapshot) error {

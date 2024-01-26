@@ -1,6 +1,7 @@
 package dto
 
 import (
+	"github.com/liuxd6825/dapr-components-contrib/liuxd/eventstore/domain/model"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
@@ -56,7 +57,7 @@ type FindEventsItem struct {
 	TenantId       string                 `bson:"tenant_id" json:"tenant_id"`
 	CommandId      string                 `bson:"command_id" json:"command_id"`
 	EventId        string                 `bson:"event_id" json:"event_id"`
-	Metadata       map[string]string      `bson:"metadata" json:"metadata"`
+	Metadata       model.Metadata         `bson:"metadata" json:"metadata"`
 	EventData      map[string]interface{} `bson:"event_data" json:"event_data"`
 	EventType      string                 `bson:"event_type" json:"event_type"`
 	EventVersion   string                 `bson:"event_version" json:"event_version"`

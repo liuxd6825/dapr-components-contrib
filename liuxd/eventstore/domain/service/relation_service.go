@@ -10,6 +10,7 @@ import (
 type RelationService interface {
 	CreateMany(ctx context.Context, tenantId string, relation []*model.Relation) error
 	DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error
+	DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error
 	FindPaging(ctx context.Context, query dto.FindPagingQuery) (*dto.FindPagingResult[*model.Relation], bool, error)
 }
 
@@ -33,6 +34,10 @@ func (r *relationService) Create(ctx context.Context, relation *model.Relation) 
 
 func (r *relationService) DeleteByAggregateId(ctx context.Context, tenantId, aggregateId string) error {
 	return r.repos.DeleteByAggregateId(ctx, tenantId, aggregateId)
+}
+
+func (r *relationService) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	return r.repos.DeleteByAggregateType(ctx, tenantId, aggregateType)
 }
 
 func (r *relationService) Update(ctx context.Context, relation *model.Relation) error {

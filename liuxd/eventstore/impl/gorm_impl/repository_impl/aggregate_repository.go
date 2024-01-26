@@ -13,6 +13,11 @@ type aggregateRepository struct {
 	dao *dao[*model.Aggregate]
 }
 
+func (r *aggregateRepository) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
 func (r *aggregateRepository) CreateMany(ctx context.Context, tenantId string, list []*model.Aggregate) error {
 	return r.dao.InsertMany(ctx, tenantId, list)
 }

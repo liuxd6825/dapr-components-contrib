@@ -43,6 +43,14 @@ func (r *relationRepository) DeleteByAggregateId(ctx context.Context, tenantId, 
 	return r.dao.deleteByFilter(ctx, tenantId, filter)
 }
 
+func (r *relationRepository) DeleteByAggregateType(ctx context.Context, tenantId, aggregateType string) error {
+	filter := bson.M{
+		TenantIdField:      tenantId,
+		AggregateTypeField: aggregateType,
+	}
+	return r.dao.deleteByFilter(ctx, tenantId, filter, msgOptions)
+}
+
 func (r *relationRepository) Update(ctx context.Context, tenantId string, v *model.Relation) error {
 	return r.dao.Update(ctx, v)
 }
