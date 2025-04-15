@@ -2,6 +2,7 @@ package nacos
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	nr "github.com/dapr/components-contrib/nameresolution"
 	"github.com/dapr/kit/logger"
@@ -11,7 +12,9 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
+	"math/rand"
 	"sync"
+	"time"
 )
 
 const (
@@ -104,6 +107,9 @@ func (r *resolver) ResolveID(ctx context.Context, req nr.ResolveRequest) (string
 	if err != nil {
 		return "", err
 	}
+	if len(instances) == 0 {
+		return "", errors.New("nacos SelectInstances() no instances found")
+	}
 	return convertToDaprInstances(instances), nil
 }
 
@@ -121,14 +127,12 @@ func (r *resolver) Close() (err error) {
 }
 
 // 实例对象转换
-func convertToDaprInstances(instances []model.Instance) string {
-	var result []nr.Instance
-	for _, ins := range instances {
-		result = append(result, nr.Instance{
-			Address: ins.Ip + ":" + fmt.Sprint(ins.Port),
-		})
-	}
-	return ""
+func convertToDaprInstances(instances []model.Instance) (address string) {
+	// 实现随机负载均衡
+	rand.Seed(time.Now().UnixNano())
+	selected := instances[rand.Intn(len(instances))]
+	address = fmt.Sprintf("%s:%d", selected.Ip, selected.Port)
+	return address
 }
 
 func (r *resolver) newNacosClientParam() *vo.NacosClientParam {
@@ -157,9 +161,8 @@ func (r *resolver) newRegisterInstance(metadata nr.Metadata) *vo.RegisterInstanc
 		Healthy:     r.cfg.Registration.Healthy,
 		Metadata:    r.cfg.Registration.Metadata,
 		ClusterName: r.cfg.Registration.ClusterName,
-
-		GroupName: r.cfg.Registration.GroupName,
-		Ephemeral: r.cfg.Registration.Ephemeral,
+		GroupName:   r.cfg.Registration.GroupName,
+		Ephemeral:   r.cfg.Registration.Ephemeral,
 	}
 	return param
 }
