@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/dapr/components-contrib/liuxd/utils"
 	nr "github.com/dapr/components-contrib/nameresolution"
 	"github.com/dapr/kit/logger"
 	consul "github.com/hashicorp/consul/api"
@@ -39,6 +40,7 @@ type resolver struct {
 	client             *client
 	logger             logger.Logger
 	registry           *registry
+	metadata           nr.Metadata
 	cfg                *resolverConfig
 	watcherStopChannel chan struct{}
 }
@@ -84,12 +86,13 @@ func newResolver(logger logger.Logger, cfg *resolverConfig, client *client, regi
 }
 
 func (r *resolver) Init(ctx context.Context, metadata nr.Metadata) error {
+	r.metadata = metadata
 	r.cfg = NewResolverConfig(metadata)
 	err := r.client.InitClient(r.newNacosClientParam())
 	if err != nil {
 		return err
 	}
-	regParam := r.newRegisterInstance(metadata)
+	regParam := r.newRegisterInstance()
 	ok, err := r.client.RegisterInstance(*regParam)
 	if err != nil {
 		return err
@@ -115,13 +118,17 @@ func (r *resolver) ResolveID(ctx context.Context, req nr.ResolveRequest) (string
 
 func (r *resolver) Close() (err error) {
 	defer func() {
-		e := recover()
-		if e == nil {
-			if v, ok := e.(error); ok {
-				err = v
-			}
-		}
+		err = utils.GetRecoverError(err, recover())
 	}()
+	deParma := r.newDeregisterInstanceParam()
+	for i := 0; i < 3; i++ {
+		ok, err := r.client.DeregisterInstance(*deParma)
+		if err != nil || !ok {
+			time.Sleep(10 * time.Millisecond)
+		} else {
+			break
+		}
+	}
 	r.client.CloseClient()
 	return err
 }
@@ -151,11 +158,22 @@ func (r *resolver) newNacosClientParam() *vo.NacosClientParam {
 	}
 }
 
-func (r *resolver) newRegisterInstance(metadata nr.Metadata) *vo.RegisterInstanceParam {
+func (r *resolver) newDeregisterInstanceParam() *vo.DeregisterInstanceParam {
+	param := &vo.DeregisterInstanceParam{
+		Ip:          r.metadata.Instance.Address,
+		ServiceName: r.metadata.Instance.AppID,
+		Port:        uint64(r.metadata.Instance.DaprHTTPPort),
+		GroupName:   r.cfg.Registration.GroupName,
+		Ephemeral:   r.cfg.Registration.Ephemeral,
+	}
+	return param
+}
+
+func (r *resolver) newRegisterInstance() *vo.RegisterInstanceParam {
 	param := &vo.RegisterInstanceParam{
-		Ip:          metadata.Instance.Address,
-		ServiceName: metadata.Instance.AppID,
-		Port:        uint64(metadata.Instance.DaprHTTPPort),
+		Ip:          r.metadata.Instance.Address,
+		ServiceName: r.metadata.Instance.AppID,
+		Port:        uint64(r.metadata.Instance.DaprHTTPPort),
 		Weight:      r.cfg.Registration.Weight,
 		Enable:      r.cfg.Registration.Enable,
 		Healthy:     r.cfg.Registration.Healthy,
