@@ -684,10 +684,10 @@ func (s *EventStore) publishMessage(ctx context.Context, event *model.Event, isR
 	}
 
 	if err := s.pubsubAdapter().Publish(ctx, pubData); err != nil {
-		logs.Error(ctx, "publishMessage() eventType:%s, eventId:%s, topic:%s, error:%s", event.EventType, event.Id, event.Topic, err.Error())
+		logs.Error(ctx, "publishMessage() error.    eventType:%s, eventId:%s, topic:%s, error:%s", event.EventType, event.Id, event.Topic, err.Error())
 		return newError("publishMessage(ctx, event, isRepublish) error: failed to publish event.", err)
 	} else {
-		logs.Infof(ctx, "publishMessage() eventType:%s, eventId:%s, topic:%s", event.EventType, event.Id, event.Topic)
+		logs.Infof(ctx, "publishMessage() succeed.  eventType:%s, eventId:%s, topic:%s", event.EventType, event.Id, event.Topic)
 	}
 
 	if err := s.messageService.Delete(ctx, tenantId, messageId); err != nil {

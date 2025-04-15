@@ -34,6 +34,10 @@ type ListValue struct{ Value []Value }
 
 func (ListValue) ValueName() string { return "list" }
 
+type FuncValue struct{ Value string }
+
+func (FuncValue) ValueName() string { return "func" }
+
 type Expression interface{ ExpressionName() string }
 
 type OrExpression struct{ Items []Expression }
@@ -90,3 +94,10 @@ func (InComparison) ExpressionName() string { return "=in=" }
 type NotInComparison struct{ Comparison }
 
 func (NotInComparison) ExpressionName() string { return "=out=" }
+
+type FuncComparison struct {
+	Comparison
+}
+
+func (FuncComparison) ExpressionName() string { return "func" }
+
