@@ -1,0 +1,27 @@
+apiVersion: dapr.io/v1alpha1
+kind: Configuration
+metadata:
+  name: daprConfig
+spec:
+  nameResolution:
+    component: "nacos"
+    configuration:
+      selfRegister: true
+      server:
+        - ip: "127.0.0.1"
+          port: 8848
+          path: "/nacos"
+      client:
+        timeoutMs: 5000
+      selected:
+        clusters :
+        groupName :
+        healthyOnly : true
+      registration:
+        weight: 100 #required,it must be lager than 0
+        enable: true #required,the instance can be access or not
+        healthy: true #required,the instance is health or not
+        clusterName: ""  #optional
+        groupName: ""   # optional,default:DEFAULT_GROUP
+        ephemeral: true    # optional
+        metadata:       # optional
