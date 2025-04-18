@@ -13,9 +13,10 @@ type resolverConfig struct {
 }
 
 type ServerConfig struct {
-	IP   string `json:"ip"`
-	Port uint64 `json:"port"`
-	Path string `json:"path"`
+	IP     string `json:"ip"`
+	Port   uint64 `json:"port"`
+	Path   string `json:"path"`
+	Scheme string `json:"scheme"`
 }
 
 type ClientConfig struct {

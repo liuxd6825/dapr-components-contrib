@@ -29,6 +29,7 @@ type client struct {
 
 func (c *client) InitClient(cfg *vo.NacosClientParam) error {
 	// create naming client
+	cfg.ClientConfig.OpenKMS = true
 	newClient, err := clients.NewNamingClient(
 		*cfg,
 	)
@@ -105,6 +106,20 @@ func (r *resolver) Init(ctx context.Context, metadata nr.Metadata) error {
 
 // ResolveID 实现 Dapr NameResolver 接口
 func (r *resolver) ResolveID(ctx context.Context, req nr.ResolveRequest) (string, error) {
+	if r.metadata.Instance.AppID == req.ID {
+		return fmt.Sprintf("%s:%d", r.metadata.Instance.AppID, r.metadata.Instance.AppPort), nil
+	}
+	selParam := vo.SelectOneHealthInstanceParam{
+		Clusters:    r.cfg.Selected.Clusters,
+		ServiceName: req.ID,
+		GroupName:   r.cfg.Selected.GroupName,
+	}
+	inst, err := r.client.SelectOneHealthyInstance(selParam)
+	if err != nil {
+		return "", err
+	}
+	return fmt.Sprintf("%s:%d", inst.ServiceName, inst.Port), nil
+
 	param := r.newSelectInstances(ctx, req)
 	instances, err := r.client.SelectInstances(*param)
 	if err != nil {
@@ -147,11 +162,15 @@ func (r *resolver) newNacosClientParam() *vo.NacosClientParam {
 	sc := []constant.ServerConfig{}
 	for _, item := range r.cfg.Server {
 		serverCfg := *constant.NewServerConfig(item.IP, item.Port, constant.WithContextPath(item.Path))
+		if item.Scheme != "" {
+			serverCfg.Scheme = item.Scheme
+		}
 		sc = append(sc, serverCfg)
 	}
 
 	//create ClientConfig
 	cc := *constant.NewClientConfig()
+	cc.NamespaceId = r.cfg.Client.NamespaceId
 	return &vo.NacosClientParam{
 		ClientConfig:  &cc,
 		ServerConfigs: sc,
@@ -175,7 +194,7 @@ func (r *resolver) newRegisterInstance() *vo.RegisterInstanceParam {
 		ServiceName: r.metadata.Instance.AppID,
 		Port:        uint64(r.metadata.Instance.DaprHTTPPort),
 		Weight:      r.cfg.Registration.Weight,
-		Enable:      r.cfg.Registration.Enable,
+		Enable:      true,
 		Healthy:     r.cfg.Registration.Healthy,
 		Metadata:    r.cfg.Registration.Metadata,
 		ClusterName: r.cfg.Registration.ClusterName,
@@ -193,6 +212,9 @@ func (r *resolver) newSelectInstances(ctx context.Context, req nr.ResolveRequest
 	param.HealthyOnly = r.cfg.Selected.HealthyOnly
 	if param.GroupName == "" {
 		param.GroupName = "DEFAULT_GROUP"
+	}
+	if len(param.Clusters) == 0 {
+		param.Clusters = []string{"DEFAULT"}
 	}
 	return param
 }
