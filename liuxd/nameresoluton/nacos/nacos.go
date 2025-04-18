@@ -2,7 +2,6 @@ package nacos
 
 import (
 	"context"
-	"errors"
 	"fmt"
 	"github.com/dapr/components-contrib/liuxd/utils"
 	nr "github.com/dapr/components-contrib/nameresolution"
@@ -94,6 +93,16 @@ func (r *resolver) Init(ctx context.Context, metadata nr.Metadata) error {
 		return err
 	}
 	regParam := r.newRegisterInstance()
+	r.logger.WithFields(map[string]any{
+		"serviceName": regParam.ServiceName,
+		"ip":          regParam.Ip,
+		"port":        regParam.Port,
+		"ephemeral":   regParam.Ephemeral,
+		"enable":      regParam.Enable,
+		"weight":      regParam.Weight,
+		"clusterName": regParam.ClusterName,
+		"healthy":     regParam.Healthy,
+	}).Debugf("nacos RegisterInstance()")
 	ok, err := r.client.RegisterInstance(*regParam)
 	if err != nil {
 		return err
@@ -106,29 +115,22 @@ func (r *resolver) Init(ctx context.Context, metadata nr.Metadata) error {
 
 // ResolveID 实现 Dapr NameResolver 接口
 func (r *resolver) ResolveID(ctx context.Context, req nr.ResolveRequest) (string, error) {
+
 	if r.metadata.Instance.AppID == req.ID {
 		return fmt.Sprintf("%s:%d", r.metadata.Instance.AppID, r.metadata.Instance.AppPort), nil
 	}
+
 	selParam := vo.SelectOneHealthInstanceParam{
 		Clusters:    r.cfg.Selected.Clusters,
 		ServiceName: req.ID,
 		GroupName:   r.cfg.Selected.GroupName,
 	}
+	r.logger.Debugf("nacos SelectOneHealthInstanceParam=%s", selParam)
 	inst, err := r.client.SelectOneHealthyInstance(selParam)
 	if err != nil {
 		return "", err
 	}
 	return fmt.Sprintf("%s:%d", inst.ServiceName, inst.Port), nil
-
-	param := r.newSelectInstances(ctx, req)
-	instances, err := r.client.SelectInstances(*param)
-	if err != nil {
-		return "", err
-	}
-	if len(instances) == 0 {
-		return "", errors.New("nacos SelectInstances() no instances found")
-	}
-	return convertToDaprInstances(instances), nil
 }
 
 func (r *resolver) Close() (err error) {
@@ -194,7 +196,7 @@ func (r *resolver) newRegisterInstance() *vo.RegisterInstanceParam {
 		ServiceName: r.metadata.Instance.AppID,
 		Port:        uint64(r.metadata.Instance.DaprHTTPPort),
 		Weight:      r.cfg.Registration.Weight,
-		Enable:      true,
+		Enable:      r.cfg.Registration.Enable,
 		Healthy:     r.cfg.Registration.Healthy,
 		Metadata:    r.cfg.Registration.Metadata,
 		ClusterName: r.cfg.Registration.ClusterName,

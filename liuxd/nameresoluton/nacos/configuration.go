@@ -68,7 +68,7 @@ type SelectedServerConfig struct {
 
 type RegistrationConfig struct {
 	Weight      float64           `json:"weight"`      //required,it must be lager than 0
-	Enable      bool              `json:"enabled"`     //required,the instance can be access or not
+	Enable      bool              `json:"enable"`      //required,the instance can be access or not
 	Healthy     bool              `json:"healthy"`     //required,the instance is health or not
 	Metadata    map[string]string `json:"metadata"`    //optional
 	ClusterName string            `json:"clusterName"` //optional
