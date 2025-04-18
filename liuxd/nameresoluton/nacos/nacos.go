@@ -191,5 +191,8 @@ func (r *resolver) newSelectInstances(ctx context.Context, req nr.ResolveRequest
 	param.ServiceName = req.ID
 	param.GroupName = r.cfg.Selected.GroupName
 	param.HealthyOnly = r.cfg.Selected.HealthyOnly
+	if param.GroupName == "" {
+		param.GroupName = "DEFAULT_GROUP"
+	}
 	return param
 }
