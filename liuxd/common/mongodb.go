@@ -33,6 +33,8 @@ const (
 	value            = "value"
 	etag             = "_etag"
 	snapshotTrigger  = "snapshotTrigger"
+	authMechanism    = "authMechanism"
+	authSource       = "admin"
 
 	defaultTimeout      = 5 * time.Second
 	defaultDatabaseName = ""
@@ -72,6 +74,8 @@ type MongoDBMetadata struct {
 	operationTimeout time.Duration
 	replicaSet       string
 	maxPoolSize      uint64
+	AuthMechanism    string `json:"auth_mechanism"`
+	AuthSource       string `json:"auth_source"`
 }
 
 // NewMongoDB returns a new MongoDB state store.
@@ -191,6 +195,9 @@ func (m *MongoDB) getMongoDBClient(metadata *MongoDBMetadata) (*mongo.Client, er
 		opts.SetMaxPoolSize(metadata.maxPoolSize)
 	}
 
+	opts.Auth.AuthMechanism = metadata.AuthMechanism
+	opts.Auth.AuthSource = metadata.AuthSource
+
 	client, err := mongo.Connect(ctx, opts)
 	if err != nil {
 		return nil, err
@@ -255,6 +262,20 @@ func (m *MongoDB) getMongoDBMetaData(metadata Metadata) (*MongoDBMetadata, error
 			panic(fmt.Sprintf("%s %s is not uint64", maxPoolSize, val))
 		}
 		meta.maxPoolSize = size
+	}
+
+	if val, ok := metadata.Properties[replicaSet]; ok && val != "" {
+		meta.replicaSet = val
+	}
+
+	meta.AuthMechanism = "SCRAM-SHA-256"
+	if val, ok := metadata.Properties[authMechanism]; ok && val != "" {
+		meta.AuthMechanism = val
+	}
+
+	meta.AuthSource = "admin"
+	if val, ok := metadata.Properties[authSource]; ok && val != "" {
+		meta.AuthSource = val
 	}
 
 	var err error
