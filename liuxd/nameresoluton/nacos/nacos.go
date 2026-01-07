@@ -3,6 +3,10 @@ package nacos
 import (
 	"context"
 	"fmt"
+	"math/rand"
+	"sync"
+	"time"
+
 	"github.com/dapr/components-contrib/liuxd/utils"
 	nr "github.com/dapr/components-contrib/nameresolution"
 	"github.com/dapr/kit/logger"
@@ -12,9 +16,6 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/v2/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/v2/model"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
-	"math/rand"
-	"sync"
-	"time"
 )
 
 const (
@@ -88,28 +89,31 @@ func newResolver(logger logger.Logger, cfg *resolverConfig, client *client, regi
 func (r *resolver) Init(ctx context.Context, metadata nr.Metadata) error {
 	r.metadata = metadata
 	r.cfg = NewResolverConfig(metadata)
-	err := r.client.InitClient(r.newNacosClientParam())
+
+	param := r.newNacosClientParam()
+	err := r.client.InitClient(param)
 	if err != nil {
 		return err
 	}
 	regParam := r.newRegisterInstance()
-	r.logger.WithFields(map[string]any{
-		"serviceName": regParam.ServiceName,
-		"ip":          regParam.Ip,
-		"port":        regParam.Port,
-		"ephemeral":   regParam.Ephemeral,
-		"enable":      regParam.Enable,
-		"weight":      regParam.Weight,
-		"clusterName": regParam.ClusterName,
-		"healthy":     regParam.Healthy,
-	}).Debugf("nacos RegisterInstance()")
 	ok, err := r.client.RegisterInstance(*regParam)
-	if err != nil {
-		return err
+	if err != nil || !ok {
+		r.logger.WithFields(map[string]any{
+			"serviceName": regParam.ServiceName,
+			"ip":          regParam.Ip,
+			"port":        regParam.Port,
+			"ephemeral":   regParam.Ephemeral,
+			"enable":      regParam.Enable,
+			"weight":      regParam.Weight,
+			"clusterName": regParam.ClusterName,
+			"healthy":     regParam.Healthy,
+		}).Errorf("nacos RegisterInstance()")
+
+		if err == nil {
+			err = fmt.Errorf("nacos register instance failed")
+		}
 	}
-	if !ok {
-		panic("failed to register instance to nacos")
-	}
+
 	return err
 }
 
@@ -173,6 +177,17 @@ func (r *resolver) newNacosClientParam() *vo.NacosClientParam {
 	//create ClientConfig
 	cc := *constant.NewClientConfig()
 	cc.NamespaceId = r.cfg.Client.NamespaceId
+	cc.Username = r.cfg.Client.Username
+	cc.Password = r.cfg.Client.Password
+	cc.TimeoutMs = r.cfg.Client.TimeoutMs
+	cc.ListenInterval = r.cfg.Client.ListenInterval
+	cc.NotLoadCacheAtStart = r.cfg.Client.NotLoadCacheAtStart
+	cc.UpdateCacheWhenEmpty = r.cfg.Client.UpdateCacheWhenEmpty
+	cc.LogDir = r.cfg.Client.LogDir
+	cc.LogLevel = r.cfg.Client.LogLevel
+	cc.AppName = r.cfg.Client.AppName
+	// add more config here if needed
+
 	return &vo.NacosClientParam{
 		ClientConfig:  &cc,
 		ServerConfigs: sc,

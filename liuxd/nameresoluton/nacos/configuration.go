@@ -2,6 +2,7 @@ package nacos
 
 import (
 	"encoding/json"
+
 	nr "github.com/dapr/components-contrib/nameresolution"
 )
 
@@ -67,14 +68,22 @@ type SelectedServerConfig struct {
 }
 
 type RegistrationConfig struct {
-	Weight      float64           `json:"weight"`      //required,it must be lager than 0
-	Enable      bool              `json:"enable"`      //required,the instance can be access or not
-	Healthy     bool              `json:"healthy"`     //required,the instance is health or not
-	Metadata    map[string]string `json:"metadata"`    //optional
-	ClusterName string            `json:"clusterName"` //optional
-	ServiceName string            `json:"serviceName"` //required
-	GroupName   string            `json:"groupName"`   //optional,default:DEFAULT_GROUP
-	Ephemeral   bool              `json:"ephemeral"`   //optional
+	TimeoutMs           uint64 `json:"timeoutMs"` //optional,default is 10000ms
+	NamespaceId         string
+	NotLoadCacheAtStart bool
+	LogDir              string
+	CacheDir            string
+	LogLevel            string
+	Username            string
+	Password            string
+	Weight              float64           `json:"weight"`      //required,it must be lager than 0
+	Enable              bool              `json:"enable"`      //required,the instance can be access or not
+	Healthy             bool              `json:"healthy"`     //required,the instance is health or not
+	Metadata            map[string]string `json:"metadata"`    //optional
+	ClusterName         string            `json:"clusterName"` //optional
+	ServiceName         string            `json:"serviceName"` //required
+	GroupName           string            `json:"groupName"`   //optional,default:DEFAULT_GROUP
+	Ephemeral           bool              `json:"ephemeral"`   //optional
 }
 
 func NewResolverConfig(metadata nr.Metadata) *resolverConfig {
